@@ -26,4 +26,8 @@ Isso foi feito para sentir quem da equipe pode contribuir com o quê e para ente
 Por enquanto, o modelo do banco de dados segue a estrutura abaixo:
 ![](https://github.com/VaneskaSousa/site-jpd/blob/main/images_rd/model_img.png)
 
+> O script do banco de dados se encontra no diretório principal como [jpd.sql](https://github.com/VaneskaSousa/site-jpd/blob/main/jpd.sql).
+
+> O banco de dados está sendo desenvolvido e modelado usando a ferramenta [Workbench](https://www.mysql.com/products/workbench/)
+
 Sendo que a categória tipo de patrocinio serve também para que a ONG possa crescer os tipos de doação aceitadas como doações única em dinheiro, doação de itens, doação mensais, patrocinio unico e etc... E da forma que o banco está modelado isso poderá ser feito no futuro, mesmo sem o auxilio da equipe Rocket. 
