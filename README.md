@@ -31,3 +31,12 @@ Por enquanto, o modelo do banco de dados segue a estrutura abaixo:
 > O banco de dados está sendo desenvolvido e modelado usando a ferramenta [Workbench](https://www.mysql.com/products/workbench/)
 
 Sendo que a categória tipo de patrocinio serve também para que a ONG possa crescer os tipos de doação aceitadas como doações única em dinheiro, doação de itens, doação mensais, patrocinio unico e etc... E da forma que o banco está modelado isso poderá ser feito no futuro, mesmo sem o auxilio da equipe Rocket. 
+
+## Dados para o BD
+* Site
+  * Vidas Impactadas
+  * Voluntários
+  * Instituições Beneficiadas
+  * 
+* Mapa
+
