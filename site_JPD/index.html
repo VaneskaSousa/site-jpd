@@ -1,33 +1,128 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Jovens Pela Diferença</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<header>
-		<h1 ><a href="index.html">Jovens Pela Diferença</a></h1>
-	  		<nav>
-			  	  <ul>
-				 	    <li> <a href="nossa_historia.html"> Nossa história</a></li>
-				  	  <li> <a href="projetos.html"> Projetos</a></li>
-				 	    <li> <a href="contato.html"> Contato</a></li>
-				  </ul>
-			  </nav>
-	</header>
-	<main>
-			<h1 class="titulo">Conheça um pouco do nosso trabalho...</h1>
-	 	<section class="acoes">
-	 		<div>
-	 			<img src="https://source.unsplash.com/random"/>
-	 		</div>
-	 		<div>
-	 			<img src="https://source.unsplash.com/random"/>
-	 		</div>
-	</main>
-	<footer>Equipe Rocket</footer>
-</body>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+
+    <body >
+        
+        <header>
+                
+            <!--Header-->
+                
+                <div id="header-espaco"></div>
+                <!--Logo JPD-->
+                <div id="logo">
+                    <img id="simbolo" src="imagens/logor.png" alt="logo">
+                
+                    <span id="logotipo">Jovens Pela Diferença</span>
+                
+                    
+                </div>
+                <!--Fim de Logo JPD-->
+                
+                <!--Botão Login-->
+                <span id="login"><a href="https://www.google.com"><img id="icone-login" src="imagens/icones/volunteer.png" alt=""></a></span>
+
+                <!--Área de Navegação-->
+                <nav>
+                    
+                    <span class="nav-link">Início</span>
+                    <span class="nav-link">Sobre</span>
+                    <span class="nav-link">Ações</span>
+                    <span class="nav-link">Time</span>
+                    <span class="nav-link"><strong>Ajude</strong></span>
+                    
+                </nav>
+
+            <!--Fim de Header-->
+
+        </header>
+
+        <main>
+            
+            <!--Início-->
+            <div id="inicio">
+                <!--Fotos Início-->
+                <img id="foto-inicio" src="imagens/foto_inicio.png" alt="foto da ong">
+                <!--Caixa de Texto Início-->
+                <div id="inicio-text-box" > <p id="inicio-text">I tried so hard and got so far
+                    But in the end, it doesn't even matter
+                    </p> 
+                </div>
+                <!--Botões de Início-->
+                <img class="carrosel-inicio" src="imagens/play.png" alt="">
+                <img class="carrosel-inicio" src="imagens/play.png" alt="">
+                <div id="links-inicio">
+                    <a href=""><img class="link-inicio" src="imagens/facebook_1.png" alt=""></a> 
+                    <a href=""><img class="link-inicio" src="imagens/instagram_2.png" alt=""></a>
+                </div>
+                <!--Fim de Botões de Início-->
+                
+
+            </div>
+            <!--Fim de Início-->
+            
+
+            <!--Sobre-->
+            <div id="sobre">
+                <div id="nossa-historia">
+                    <h1>Nossa História</h1>
+                    <br>
+                    <hr >
+                    <br>
+                    <p>Não tinha medo o tal João de Santo Cristo
+                        Era o que todos diziam quando ele se perdeu Deixou pra trás todo o marasmo da fazenda
+                        Só pra sentir no seu sangue o ódio que Jesus lhe deu
+                        Quando criança só pensava em ser bandido
+                        Ainda mais quando com um tiro de soldado o pai morreu
+                        Era o terror da sertania onde morava
+                        E na escola até o professor com ele aprendeu
+                        Ia pra igreja só pra roubar o dinheiro
+                        Que as velhinhas colocavam na caixinha do altar
+                        Sentia mesmo que era mesmo diferente
+                        Sentia que aquilo ali não era o seu lugar
+                        Ele queria sair para ver o mar
+                        E as coisas que ele via na televisão
+                        .
+                    </p>
+                </div>
+            </div>
+            <!--Fim de Sobre-->
+
+
+            <!--Mapa-->
+            <div id="mapa-div">
+                <img id="mapa" width=600 src="imagens/Untitled.png" alt="">
+                <img id="sreg1" src="imagens/pin2.png" alt="" onmouseover="trocarImgTeste(this.id)">
+                <img id="sreg2" src="imagens/pin2.png" alt="" onmouseover="trocarImgTeste(this.id)">
+                <div id="lateral-direita">
+                    <img id="img-teste" src="imagens/Logo.png" alt="">
+                </div>
+            </div>
+            <!--Fim de Mapa-->
+            
+
+            <!--Ajude-->
+
+            <!--Fim de Ajude-->
+
+        </main>
+
+        <footer>
+
+
+        </footer>
+
+    </body>
+
 </html>

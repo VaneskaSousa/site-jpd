@@ -1,0 +1,273 @@
+:root {
+  --image-test: "imagens/pika.png";
+}
+
+/* ===Estilo Corpo=== */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Quicksand", roboto, sans-serif;
+  background: #eaeaea;
+  width: 1920px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 64px;
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+  color: #0b77a3;
+}
+
+p {
+  font-size: 20px;
+  font-style: normal;
+}
+/* ===Fim de Estilo Corpo=== */
+
+/*==========================================================================================*/
+
+/* ===Estilo Header=== */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #c0d6df;
+  height: 124px;
+  width: 1920px;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  z-index: 20;
+}
+
+#header-espaco {
+  background-color: #eaeaea;
+  height: 24px;
+}
+#logo {
+  display: inline-flex;
+  align-items: center;
+  height: 100px;
+}
+#simbolo {
+  margin-left: 75px;
+  height: 97px;
+}
+
+#logotipo {
+  font-family: "Lato";
+  margin-left: 23px;
+  color: #0b77a3;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* ---Seção Navegação--- */
+nav {
+  align-items: center;
+  display: inline-flex;
+  float: right;
+  width: 750px;
+  height: 100px;
+  text-align: center;
+}
+
+.nav-link {
+  display: flex;
+  flex: auto;
+  font-size: 24px;
+  color: #0b77a3;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link:hover {
+  background: #ffecdb;
+  border-radius: 10px;
+  height: 60px;
+  cursor: pointer;
+}
+
+#login {
+  display: inline-flex;
+  height: 100px;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 42px;
+  float: right;
+}
+
+#icone-login:hover {
+  background: #ffecdb;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#icone-login {
+  display: inline-flex;
+  width: 50px;
+  align-items: center;
+}
+/* ---Fim de Seção Navegação--- */
+/*----------*/
+/* ===Fim de Estilo Header=== */
+
+/*==========================================================================================*/
+
+/* ===Estilo Principal=== */
+main {
+  margin-top: 0px;
+}
+
+/* ---Seção Início--- */
+#inicio {
+  margin: 64px 42px;
+  position: relative;
+}
+
+#foto-inicio {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+#inicio-text-box {
+  position: absolute;
+  width: 440px;
+  height: 150px;
+  left: 69px;
+  top: 581px;
+
+  background: rgba(255, 247, 240, 0.7);
+  border-radius: 10px;
+}
+
+#inicio-text {
+  margin: 30px 48px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #0b77a3;
+}
+
+.carrosel-inicio {
+  position: absolute;
+  top: 362px;
+  right: 26px;
+  width: 100px;
+}
+
+#links-inicio {
+  position: absolute;
+  width: 200px;
+  margin: 46px;
+  margin-top: 0px;
+  top: 714px;
+  right: 0px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-inicio {
+  display: flex;
+  width: 70px;
+}
+/* ---Fim de Seção Início---*/
+/*----------*/
+/* ---Seção Sobre---*/
+#sobre {
+  margin-top: 200px;
+}
+
+#nossa-historia {
+  /*!!!Bloco nossa história contendo header, linha e texto!!!*/
+  margin-top: 116px;
+  margin-left: 125px;
+  width: 950px;
+}
+#nossa-historia hr {
+  height: 2px;
+  color: #0b77a3;
+  background-color: #0b77a3;
+}
+
+#dados-sobre {
+  /*!Bloco de dados da ONG*/
+}
+/* ---Fim Seção Sobre---*/
+/*----------*/
+/* ---Seção Mapa---*/
+#mapa-div {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#mapa-div:hover {
+}
+
+#mapa {
+  position: relative;
+}
+
+#sreg1 {
+  float: left;
+  width: 30px;
+  position: relative;
+  left: 180px;
+  top: 30px;
+}
+#sreg1:hover {
+  opacity: 0.5;
+}
+
+#sreg2 {
+  float: left;
+  width: 30px;
+  position: relative;
+  left: 400px;
+  top: 75px;
+}
+#sreg2:hover {
+  opacity: 0.5;
+}
+
+#sreg3 {
+  float: left;
+  width: 30px;
+  position: relative;
+  left: 180px;
+  top: 50px;
+}
+#sreg3:hover {
+  opacity: 0.5;
+}
+
+#img-teste {
+  width: 300px;
+}
+
+#lateral-direita {
+  float: right;
+}
+/* ---Fim de Seção Mapa---*
+/*----------*/
+/* ===Fim de Principal=== */
+
+/*==========================================================================================*/
+
+/* ===Estilo Footer=== */
+
+/* ===Fim de Estilo Footer=== */
+
+/*==========================================================================================*/
