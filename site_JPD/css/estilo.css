@@ -120,6 +120,10 @@ header {
   align-items: center;
   height: 100px;
 }
+
+#logo a {
+  display: flex;
+}
 #simbolo {
   margin-left: 75px;
   height: 97px;
@@ -145,7 +149,10 @@ nav {
 }
 
 .nav-link {
+  user-select: none;
   display: flex;
+  width: 155px;
+  height: 50px;
   flex: auto;
   font-size: 24px;
   color: #0b77a3;
@@ -458,4 +465,21 @@ main {
   font-size: 30px;
 
   text-align: center;
+}
+
+#login-botao {
+  width: 200px;
+  height: 50px;
+
+  background-color: #0b77a3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
 }

@@ -14,3 +14,7 @@ function letMeCallYou()
 {
     alert("Bazinga!!!  you called letMeCallYou")
 }
+
+function pageScroll(x) {
+    window.scrollTo({ top: x, behavior: 'smooth' })
+}
