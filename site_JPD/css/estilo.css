@@ -1,6 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+::placeholder {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: #beb6af;
+}
+
 :root {
   --image-test: "imagens/pika.png";
 }
+
+/*=================*/
+/*                 */
+/*                 */
+/*  Tela  Inicial  */
+/*                 */
+/*                 */
+/*=================*/
 
 /* ===Estilo Corpo=== */
 * {
@@ -10,23 +28,73 @@
 
 body {
   font-family: "Quicksand", roboto, sans-serif;
-  background: #eaeaea;
+  background: #fffef0;
   width: 1920px;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 25px;
+  color: #0b77a3;
 }
 
 h1 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
   font-size: 64px;
-  font-family: "Lato", "Helvetica Neue", sans-serif;
-  color: #0b77a3;
+}
+
+h3 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+h4 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+h5 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+
+  text-align: center;
 }
 
 p {
   font-size: 20px;
   font-style: normal;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+
+hr {
+  height: 2px;
+  color: #0b77a3;
+  background-color: #0b77a3;
 }
 /* ===Fim de Estilo Corpo=== */
 
@@ -162,8 +230,8 @@ main {
 
 .carrosel-inicio {
   position: absolute;
-  top: 362px;
   right: 26px;
+  top: 362px;
   width: 100px;
 }
 
@@ -188,12 +256,13 @@ main {
 /* ---Seção Sobre---*/
 #sobre {
   margin-top: 200px;
+  position: relative;
 }
 
 #nossa-historia {
   /*!!!Bloco nossa história contendo header, linha e texto!!!*/
-  margin-top: 116px;
-  margin-left: 125px;
+  padding-top: 116px;
+  padding-left: 125px;
   width: 950px;
 }
 #nossa-historia hr {
@@ -202,15 +271,42 @@ main {
   background-color: #0b77a3;
 }
 
+/*!!!Bloco de dados da ONG!!!*/
 #dados-sobre {
-  /*!Bloco de dados da ONG*/
+  display: inline-flex;
+  margin-top: 170px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  background: #a0e5ff;
+  width: 1920px;
+  height: 250px;
+  text-align: center;
+  justify-content: center;
+}
+
+.dado-ong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+}
+#foto-sobre {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 570px;
+  height: 870px;
+  z-index: -1;
 }
 /* ---Fim Seção Sobre---*/
 /*----------*/
 /* ---Seção Mapa---*/
-#mapa-div {
+#mapa-sec {
   margin-left: 200px;
   margin-right: 200px;
+  margin-top: 1000px;
 }
 
 #mapa-div:hover {
@@ -260,7 +356,62 @@ main {
 #lateral-direita {
   float: right;
 }
-/* ---Fim de Seção Mapa---*
+/* ---Fim de Seção Time---*
+/*----------*/
+/* ---Seção Mapa---*/
+#time-sec {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+#time-direcao {
+  margin: 0px 180px;
+  margin-bottom: 100px;
+}
+
+#time-voluntarios {
+  margin: 0px 386px;
+}
+
+.time {
+  display: inline-flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.time-proximo {
+  position: absolute;
+}
+
+.foto-dir {
+  display: flex;
+  width: 240px;
+  height: 220px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.foto-dir-desc {
+  display: flex;
+  width: 240px;
+  height: 75px;
+  background: #db76ff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.foto-vol {
+  display: flex;
+  width: 144px;
+  height: 144px;
+  border-radius: 100px;
+}
+
+/* ---Fim de Seção Time--*
 /*----------*/
 /* ===Fim de Principal=== */
 
@@ -271,3 +422,40 @@ main {
 /* ===Fim de Estilo Footer=== */
 
 /*==========================================================================================*/
+
+/*=================*/
+/*                 */
+/*                 */
+/* Tela de Usuário */
+/*                 */
+/*                 */
+/*=================*/
+
+#login-sec {
+  margin-top: 100px;
+  padding: 0px 125px;
+}
+
+#form-login {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-logar {
+  display: flex;
+  width: 540px;
+  height: 70px;
+  border: 2px solid #0b77a3;
+  border-radius: 10px;
+  outline-width: 0;
+  background: #fffef0;
+
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+
+  text-align: center;
+}
