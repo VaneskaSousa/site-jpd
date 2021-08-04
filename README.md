@@ -28,19 +28,19 @@ Por enquanto, o modelo do banco de dados segue a estrutura abaixo:
 | Modelo banco de dados  	| [site-jpd/database/](https://github.com/VaneskaSousa/site-jpd/database)  	
 | Sript banco de dados  	| [site-jpd/database/](https://github.com/VaneskaSousa/site-jpd/database)  	   	   	
 | HTML  	| [site-jpd/](https://github.com/VaneskaSousa/site-jpd/) 	   	
-| CSS  	| [site-ppd/css](https://github.com/VaneskaSousa/site-jpd/)
-| Javascript | [site-ppd/javascript](https://github.com/VaneskaSousa/site-jpd/)
+| CSS  	| [site-jpd/css](https://github.com/VaneskaSousa/site-jpd/css)
+| Javascript | [site-jpd/javascript](https://github.com/VaneskaSousa/site-jpd/js)
 
 ### Requisitos e progessos
 No relatorio os requisitos foram divididos entre gerais e detalhados, onde os gerais funcionam como milestones. Para não gerar confusões, durante o checkpoint 3 (até dia 04/08/21) os requisitos levados em consideração sao apenas os detalhados, sendo eles:
 
 | Requisito  	| Dificuldade  | Status  	| local  	| Observação  	|
 |---	|---	|---	|---	|---	|
-| RD_1: Estrutura. Como patrocinador ou interessado na ONG posso acessar o site desta e nele encontrar logo na primeira tela como chegar nas informações sobre, ações, voluntários (time) e ajude.  	| M  | Em desenvolvimento |   	| @dell está responsável por esta  	|
+| RD_1: Estrutura. Como patrocinador ou interessado na ONG posso acessar o site desta e nele encontrar logo na primeira tela como chegar nas informações sobre, ações, voluntários (time) e ajude.  	| M  | Em desenvolvimento |  [Classe tabanna](github.com/vaneskasousa/site-jpd/site-jpd/index.html) 	| @dell está responsável por esta  	|
 | RD_2: Mídia inicial. Como patrocinador ou interessado na ONG posso ver na primeira sessão do site um vídeo ou fotos da ONG em ação.  	| P | Em desenvolvimento |   	| @dell  	|
-| RD_3: Impacto social. Como patrocinador ou interessado na ONG posso ver o impacto causado pela organização de maneira objetiva. 	| M |   	|   	|   	|
-| RD_4: Detalhe das ações. Como patrocinador ou interessado na ONG posso ver os bairros em que a ONG já atuou, bem como detalhes dessas ações em seu site.  	|   	|   	|   	|   	|
-| RD_5: Detalhes dos voluntários. Como patrocinador ou interessado na ONG posso ver no site como a ONG se organiza em voluntários e coordenadores, sabendo assim quem são os responsáveis e a capacidade da ONG.   	|   	|   	|   	|   	|
+| RD_3: Impacto social. Como patrocinador ou interessado na ONG posso ver o impacto causado pela organização de maneira objetiva. 	| P |  Em desenvolvimento 	|   	|   	|
+| RD_4: Detalhe das ações. Como patrocinador ou interessado na ONG posso ver os bairros em que a ONG já atuou, bem como detalhes dessas ações em seu site.  	|  G 	|   	|   	|   	|
+| RD_5: Detalhes dos voluntários. Como patrocinador ou interessado na ONG posso ver no site como a ONG se organiza em voluntários e coordenadores, sabendo assim quem são os responsáveis e a capacidade da ONG.   	|  M 	|   	|   	|   	|
 | RD_6: Detalhes sobre a ajuda. Como patrocinador posso ver os tipos de patrocínio, bem como qual o bem que aquela cota de patrocínio trás às ações (quantas cestas básicas é possível comprar, quantas ações podem ser financiadas) e quais os ganhos institucionais (mídia kit, publicidade, logo na camisa).   	|   	|   	|   	|   	|
 | RD_7: Contato. Como patrocinador ou interessado na ONG posso entrar em contato através do site com os líderes da ONG.   	|   	|   	|   	|   	|
 | RD_8: Login do voluntário organizador. Como voluntário organizador posso clicar na opção de login na página  inicial para entrar na minha conta.  	|   	|   	|   	|   	|
