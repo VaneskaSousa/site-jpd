@@ -25,11 +25,11 @@ Por enquanto, o modelo do banco de dados segue a estrutura abaixo:
 ## Arquivos do Projeto
 | Arquivo  	| Local  	 	
 |---	|---		
-| Modelo banco de dados  	| [site-jpd/database/](https://github.com/VaneskaSousa/site-jpd/database)  	
-| Sript banco de dados  	| [site-jpd/database/](https://github.com/VaneskaSousa/site-jpd/database)  	   	   	
-| HTML  	| [site-jpd/](https://github.com/VaneskaSousa/site-jpd/) 	   	
-| CSS  	| [site-jpd/css](https://github.com/VaneskaSousa/site-jpd/css)
-| Javascript | [site-jpd/javascript](https://github.com/VaneskaSousa/site-jpd/js)
+| Modelo banco de dados  	| [site-jpd/database/](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD/database)  	
+| Sript banco de dados  	| [site-jpd/database/](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD/database)  	   	   	
+| HTML  	| [site-jpd/](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD) 	   	
+| CSS  	| [site-jpd/css](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD/css)
+| Javascript | [site-jpd/javascript](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD/js)
 
 ### Requisitos e progessos
 No relatorio os requisitos foram divididos entre gerais e detalhados, onde os gerais funcionam como milestones. Para não gerar confusões, durante o checkpoint 3 (até dia 04/08/21) os requisitos levados em consideração sao apenas os detalhados, sendo eles:
