@@ -519,7 +519,7 @@ footer h5 {
 /*=================*/
 /*                 */
 /*                 */
-/* Tela de Usuário */
+/*  Tela de Login  */
 /*                 */
 /*                 */
 /*=================*/
@@ -568,4 +568,53 @@ footer h5 {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
+}
+
+/*==========================================================================================*/
+
+/*=================*/
+/*                 */
+/*                 */
+/*  Tela de Ação   */
+/*                 */
+/*                 */
+/*=================*/
+
+#main-acao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-acao h2 {
+  margin: 32px 0px 86px 0px;
+}
+
+#bloco-acao {
+}
+
+#main-acao h4 {
+  display: block;
+  margin-bottom: 16px;
+}
+
+#main-acao hr {
+  margin-bottom: 52px;
+}
+#form-acao {
+}
+
+.input-acao {
+  display: block;
+  height: 60px;
+  width: 650px;
+  margin: 6px 0px 52px 0px;
+  border: none;
+  background-color: #bce6f6;
+  outline: none;
+}
+
+.img-acao {
+  display: block;
 }
