@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+::placeholder {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: #beb6af;
+}
+
+:root {
+  --image-test: "img/pika.png";
+}
+
+/*=================*/
+/*                 */
+/*                 */
+/*  Tela  Inicial  */
+/*                 */
+/*                 */
+/*=================*/
+
+/* ===Estilo Corpo=== */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Quicksand", roboto, sans-serif;
+  background: #fffef0;
+  width: 1920px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: #0b77a3;
+}
+
+h1 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+h3 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+h4 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+h5 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+h6 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  font-style: normal;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+
+hr {
+  height: 2px;
+  color: #0b77a3;
+  background-color: #0b77a3;
+}
+/* ===Fim de Estilo Corpo=== */
+
+/*==========================================================================================*/
+
+/* ===Estilo Header=== */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #c0d6df;
+  height: 124px;
+  width: 1920px;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  z-index: 20;
+}
+
+#header-espaco {
+  background-color: #eaeaea;
+  height: 24px;
+}
+#logo {
+  display: inline-flex;
+  align-items: center;
+  height: 100px;
+}
+
+#logo a {
+  display: flex;
+}
+#simbolo {
+  margin-left: 75px;
+  height: 97px;
+}
+
+#logotipo {
+  font-family: "Lato";
+  margin-left: 23px;
+  color: #0b77a3;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* ---Seção Navegação--- */
+nav {
+  align-items: center;
+  display: inline-flex;
+  float: right;
+  width: 750px;
+  height: 100px;
+  text-align: center;
+}
+
+.nav-link {
+  user-select: none;
+  display: flex;
+  width: 155px;
+  height: 50px;
+  flex: auto;
+  font-size: 24px;
+  color: #0b77a3;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link:hover {
+  background: #ffecdb;
+  border-radius: 10px;
+  height: 60px;
+  cursor: pointer;
+}
+
+#login {
+  display: inline-flex;
+  height: 100px;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 42px;
+  float: right;
+}
+
+#icone-login:hover {
+  background: #ffecdb;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#icone-login {
+  display: inline-flex;
+  width: 50px;
+  align-items: center;
+}
+/* ---Fim de Seção Navegação--- */
+/*----------*/
+/* ===Fim de Estilo Header=== */
+
+/*==========================================================================================*/
+
+/* ===Estilo Principal=== */
+main {
+  margin-top: 0px;
+}
+
+/* ---Seção Início--- */
+#inicio {
+  margin: 64px 42px;
+  position: relative;
+}
+
+#foto-inicio {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+#inicio-text-box {
+  position: absolute;
+  width: 440px;
+  height: 150px;
+  left: 69px;
+  top: 581px;
+
+  background: rgba(255, 247, 240, 0.7);
+  border-radius: 10px;
+}
+
+#inicio-text {
+  margin: 30px 48px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #0b77a3;
+}
+
+.carrosel-inicio {
+  position: absolute;
+  right: 26px;
+  top: 362px;
+  width: 100px;
+}
+
+#links-inicio {
+  position: absolute;
+  width: 200px;
+  margin: 46px;
+  margin-top: 0px;
+  top: 714px;
+  right: 0px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-inicio {
+  display: flex;
+  width: 70px;
+}
+/* ---Fim de Seção Início---*/
+/*----------*/
+/* ---Seção Sobre---*/
+#sobre {
+  margin-top: 200px;
+  position: relative;
+}
+
+#nossa-historia {
+  /*!!!Bloco nossa história contendo header, linha e texto!!!*/
+  padding-top: 116px;
+  padding-left: 125px;
+  width: 950px;
+}
+#nossa-historia hr {
+  height: 2px;
+  color: #0b77a3;
+  background-color: #0b77a3;
+}
+
+/*!!!Bloco de dados da ONG!!!*/
+#dados-sobre {
+  display: inline-flex;
+  margin-top: 170px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  background: #a0e5ff;
+  width: 1920px;
+  height: 250px;
+  text-align: center;
+  justify-content: center;
+}
+
+.dado-ong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+}
+#foto-sobre {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 570px;
+  height: 870px;
+  z-index: -1;
+}
+/* ---Fim Seção Sobre---*/
+/*----------*/
+/* ---Seção Mapa---*/
+#mapa-sec {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 200px;
+}
+
+#mapa-div:hover {
+}
+
+#mapa {
+  position: relative;
+}
+
+#sreg1 {
+  float: left;
+  width: 30px;
+  position: relative;
+  left: 180px;
+  top: 30px;
+}
+#sreg1:hover {
+  opacity: 0.5;
+}
+
+#sreg2 {
+  float: left;
+  width: 30px;
+  position: relative;
+  left: 400px;
+  top: 75px;
+}
+#sreg2:hover {
+  opacity: 0.5;
+}
+
+#sreg3 {
+  float: left;
+  width: 30px;
+  position: relative;
+  left: 180px;
+  top: 50px;
+}
+#sreg3:hover {
+  opacity: 0.5;
+}
+
+#img-teste {
+  width: 300px;
+}
+
+#lateral-direita {
+  float: right;
+}
+/* ---Fim de Seção Time---*
+/*----------*/
+/* ---Seção Mapa---*/
+#time-sec {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+#time-direcao {
+  margin: 0px 180px;
+  margin-bottom: 100px;
+}
+
+#time-voluntarios {
+  margin: 0px 386px;
+}
+
+.time {
+  display: inline-flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.time-proximo {
+  position: absolute;
+}
+
+.foto-dir {
+  display: flex;
+  width: 240px;
+  height: 220px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.foto-dir-desc {
+  display: flex;
+  width: 240px;
+  height: 75px;
+  background: #db76ff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.foto-vol {
+  display: flex;
+  width: 144px;
+  height: 144px;
+  border-radius: 100px;
+}
+
+/* ---Fim de Seção Time--*
+/*----------*/
+/* ---Seção Ajude--*/
+#ajude-sec {
+  margin: 200px 127px;
+}
+
+#ajude-sec h2 {
+  margin-left: 10px;
+}
+
+#ajude-sec hr {
+  margin: 0px 10px;
+}
+#planos {
+  display: inline-flex;
+  margin-top: 132px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.plano {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 456px;
+  height: 650px;
+  border-radius: 10px;
+  background-color: #a0e5ff;
+}
+
+.plano img {
+  margin-bottom: 33px;
+}
+
+.plano h3 {
+  margin: 30px 132px;
+  margin-bottom: 40px;
+}
+
+.plano h4 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff7b0;
+  border: 2px solid #0b77a3;
+  border-radius: 100px;
+  width: 216px;
+  height: 72px;
+  bottom: 30px;
+}
+
+.plano h5 {
+  margin-bottom: 16px;
+}
+
+.plano p {
+  padding: 0px 18px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+/* ---Fim de Seção Ajude--*/
+/*----------*/
+/* ===Fim de Principal=== */
+
+/*==========================================================================================*/
+
+/* ===Estilo Footer=== */
+footer {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  background: #a0e5ff;
+  border-radius: 100px 100px 0px 0px;
+  width: 1920px;
+  height: 460px;
+}
+
+footer div {
+  position: relative;
+  height: 125px;
+}
+footer hr {
+  width: 405px;
+  border: 1px solid #0b77a3;
+}
+
+footer h5 {
+  position: absolute;
+  bottom: 0px;
+}
+/* ===Fim de Estilo Footer=== */
+
+/*==========================================================================================*/
+
+/*=================*/
+/*                 */
+/*                 */
+/*  Tela de Login  */
+/*                 */
+/*                 */
+/*=================*/
+
+#login-sec {
+  margin-top: 100px;
+  padding: 0px 125px;
+}
+
+#form-login {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-logar {
+  display: flex;
+  width: 540px;
+  height: 70px;
+  border: 2px solid #0b77a3;
+  border-radius: 10px;
+  outline-width: 0;
+  background: #fffef0;
+
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+
+  text-align: center;
+}
+
+#login-botao {
+  width: 200px;
+  height: 50px;
+
+  background-color: #0b77a3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/*==========================================================================================*/
+
+/*=================*/
+/*                 */
+/*                 */
+/*  Tela de Ação   */
+/*                 */
+/*                 */
+/*=================*/
+
+#main-acao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-acao h2 {
+  margin: 32px 0px 86px 0px;
+}
+
+#bloco-acao {
+}
+
+#main-acao h4 {
+  display: block;
+  margin-bottom: 16px;
+}
+
+#main-acao hr {
+  margin-bottom: 52px;
+}
+#form-acao {
+}
+
+.input-acao {
+  display: block;
+  height: 60px;
+  width: 650px;
+  margin: 6px 0px 52px 0px;
+  border: none;
+  background-color: #bce6f6;
+  outline: none;
+}
+
+.img-acao {
+  display: block;
+}

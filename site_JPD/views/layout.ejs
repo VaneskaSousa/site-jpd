@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/script.js"></script>
+    </head>
+
+<body>
+
+    <%- include('pages/header') %>
+     
+    <!-- a chjamada para script.js foi colocada aqui para que possa ser vista antes da criacao da tabela presente no arquivo cadastro.ejs. Assim a funcao update() poderá ser considerada declarada antes de chegar no código presente em cadastro.ejs. -->
+
+    <main>
+        <div class="container-fluid">
+            <%- body %>
+        </div>
+    </main>
+    
+   
+<footer>
+    <div>
+        <h4>Contato</h4> <br>
+        <hr><br><br><br>
+        <h5>jpdprojetosocial@gmail.com</h5>
+    </div>
+
+    <div>
+        <h4>Redes Sociais</h4><br>  
+        <hr><br>
+        <div>
+            <span><a href=""><img src="img/icones/instagram.png" alt=""></a></span>
+            <span><a href=""><img src="img/icones/facebook.png" alt=""></a></span>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
