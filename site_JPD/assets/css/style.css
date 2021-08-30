@@ -10,6 +10,7 @@
 
 :root {
   --image-test: "img/pika.png";
+  --size: 1.33;
 }
 
 /*=================*/
@@ -262,7 +263,8 @@ main {
 /*----------*/
 /* ---Seção Sobre---*/
 #sobre {
-  margin-top: 200px;
+  margin: 200px 0px;
+
   position: relative;
 }
 
@@ -310,65 +312,116 @@ main {
 /* ---Fim Seção Sobre---*/
 /*----------*/
 /* ---Seção Mapa---*/
-#mapa-sec {
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 200px;
-}
-
-#mapa-div:hover {
-}
-
 #mapa {
+  margin: 200px 123px;
+}
+
+#mapa-sec {
+  margin-top: 50px;
+  height: calc(var(--size) * 500px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#lateral-esquerda {
+  display: inline-flex;
   position: relative;
 }
 
-#sreg1 {
-  float: left;
-  width: 30px;
+#mapa-img {
+  height: calc(var(--size) * 500px);
+  width: calc(var(--size) * 600px);
   position: relative;
-  left: 180px;
-  top: 30px;
-}
-#sreg1:hover {
-  opacity: 0.5;
 }
 
-#sreg2 {
-  float: left;
-  width: 30px;
-  position: relative;
-  left: 400px;
-  top: 75px;
-}
-#sreg2:hover {
-  opacity: 0.5;
+.bot-mapa {
+  width: calc(var(--size) * 36px);
+  height: calc(var(--size) * 16px);
+  background-color: white;
+  font-size: 6px;
+  position: absolute;
+  opacity: 0;
 }
 
-#sreg3 {
-  float: left;
-  width: 30px;
-  position: relative;
-  left: 180px;
-  top: 50px;
-}
-#sreg3:hover {
-  opacity: 0.5;
+.bot-mapa:hover {
+  cursor: pointer;
 }
 
-#img-teste {
-  width: 300px;
+#reg-1 {
+  top: calc(var(--size) * 50px);
+  left: calc(var(--size) * 140px);
+}
+#reg-2 {
+  top: calc(var(--size) * 103px);
+  left: calc(var(--size) * 352px);
+}
+#reg-3 {
+  top: calc(var(--size) * 98px);
+  left: calc(var(--size) * 157px);
+}
+#reg-4 {
+  top: calc(var(--size) * 182px);
+  left: calc(var(--size) * 222px);
+}
+#reg-5 {
+  top: calc(var(--size) * 241px);
+  left: calc(var(--size) * 58px);
+}
+#reg-6 {
+  top: calc(var(--size) * 312px);
+  left: calc(var(--size) * 379px);
+}
+#reg-7 {
+  top: calc(var(--size) * 207px);
+  left: calc(var(--size) * 440px);
+}
+#reg-8 {
+  top: calc(var(--size) * 296px);
+  left: calc(var(--size) * 233px);
+}
+#reg-9 {
+  top: calc(var(--size) * 378px);
+  left: calc(var(--size) * 295px);
+}
+#reg-10 {
+  top: calc(var(--size) * 294px);
+  left: calc(var(--size) * 131px);
+}
+#reg-11 {
+  top: calc(var(--size) * 163px);
+  left: calc(var(--size) * 121px);
+}
+#reg-12 {
+  top: calc(var(--size) * 84px);
+  left: calc(var(--size) * 265px);
 }
 
 #lateral-direita {
-  float: right;
+  display: inline-flex;
+  height: 100%;
 }
+
+#lateral-direita div h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#lateral-direita div {
+  padding: 100px 0px;
+}
+
+#img-regional {
+  width: 540px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
 /* ---Fim de Seção Time---*
 /*----------*/
 /* ---Seção Mapa---*/
 #time-sec {
-  margin-top: 100px;
-  margin-bottom: 200px;
+  margin: 200px 0px;
   text-align: center;
 }
 

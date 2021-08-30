@@ -129,5 +129,13 @@ router.post('/cadastro/add',(req,res)=>{
 
 });
 
+router.post('/regional',(req,res)=>{
+    let data = {regional:"", image:"",text:""};
+    data.regional = req.body.regional;
+    data.image = regionais[req.body.regional].image;
+    data.text = regionais[req.body.regional].text;
+    res.send(JSON.stringify(data));
+});
+
 //Essa linha permite que este código seja exportado como um módulo e possa ser usado em outras partes da aplicação.
 module.exports = router;

@@ -32,6 +32,11 @@ app.use(express.json()); //prepara a aplicacao para receber dados no formato JSO
 //espera um tempo de 2 segundos (2000 milissegundos) para responder a qualquer requisicao do cliente. Isso gera um delay (espera) proposital para testes do codigo e condicoes de erro.
 //app.use(utils.delay(2000));
 
+global.regionais = [];
+global.usuarios = {email: 'creu@.com', senha: 'miau'};
+for (var i = 0; i<13; i++){
+    regionais.push ({image:"https://s2.glbimg.com/5IEojOCGN6bgFV5L2K_RKB5dtvk=/e.glbimg.com/og/ed/f/original/2020/03/31/cat-4548812_960_720.jpg", text: 'A regional '+i+' é muito legal!'})
+}
 
 
 //Criando usando rotas simples que estão no arquivo routes.js
