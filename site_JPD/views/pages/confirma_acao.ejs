@@ -1,0 +1,27 @@
+<%- contentFor( 'body')%>
+
+<main>
+<div id="login-sec">
+    <% let linkLogin ="/cadastro/login"; %>
+    <h3>Bem vindo, Administrador!</h3>
+    <br>
+    <br>
+    <hr>
+
+        <form name="fLogin" id="formLogin">
+            <label for="name">Digite seu nome:</label>
+            <input class="input-logar" type="text" name="name">
+            <br>
+            <br>
+            <label for="email">Digite seu email:</label>
+            <input class="input-logar" type="text" name="email">
+            <br>
+            <br>
+            <label for="arquivo">Envie o comprovante de sua doação:</label>
+            <input class="input-logar" type="file" name="arquivo">
+            <br>
+            <br>
+            <input type="button" value = "Enviar" id="login-botao" onclick="loginVoluntario(document.fLogin,'<%=linkLogin%>')" class = "btn">
+        </form>
+</div>
+</main>

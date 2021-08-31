@@ -16,6 +16,11 @@ router.get('/cadastro_acao',(req,res)=>{ //callback - funcao que trata dado even
     res.render('pages/cadastro_acao'); 
 });
 
+
+router.get('/confirma_acao',(req,res)=>{ //callback - funcao que trata dado evento  GET
+    res.render('pages/confirma_acao');
+});
+
 router.post('/consulta/acao',(req,res)=>{        //consulta do mySQL
     /*
     * Tentei mudar o nome de req e descobri que não pode pois o objeto ja retorna com o objeto e dai eu pego os campos req e res

@@ -512,7 +512,7 @@ main {
   margin-bottom: 40px;
 }
 
-.plano h4 {
+.plano a {
   position: absolute;
   display: flex;
   align-items: center;
@@ -520,9 +520,14 @@ main {
   background: #fff7b0;
   border: 2px solid #0b77a3;
   border-radius: 100px;
+  text-decoration: none;
   width: 216px;
   height: 72px;
   bottom: 30px;
+}
+
+plano a:visited {
+  color: inherit;
 }
 
 .plano h5 {

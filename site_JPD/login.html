@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <script type="text/javascript" src="js/script.js"></script>
     </head>
 
@@ -49,20 +49,24 @@
                 <br>
                 <br>
                 <hr>
-    
-                    <form id="form-login" action="/organizador.html">
-                        <input class="input-logar" type="text" name="login" placeholder="Login">
-                        <br>
-                        <br>
-                        <input class="input-logar" type="password" name="senha" placeholder="Senha">
-                        <br>
-                        <br>
-                        <button id="login-botao"> Acessar </button>
-                    </form>
-                
-            </div>
             
-        </main>
+                    <form name="fLogin" id="formLogin">
+                        <label for="name">Digite seu nome:</label>
+                        <input class="input-logar" type="text" name="name">
+                        <br>
+                        <br>
+                        <label for="email">Digite seu email:</label>
+                        <input class="input-logar" type="text" name="email">
+                        <br>
+                        <br>
+                        <label for="arquivo">Envie o comprovante de sua doação:</label>
+                        <input class="input-logar" type="file" name="arquivo">
+                        <br>
+                        <br>
+                        <input type="button" value = "Enviar" id="login-botao" onclick="loginVoluntario(document.fLogin,'<%=linkLogin%>')" class = "btn">
+                    </form>
+            </div>
+            </main>
 
     </body>
 
