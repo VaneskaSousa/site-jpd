@@ -105,5 +105,18 @@ insert into tipo_apoio(tipo,valor,descricao,fk_periodicidade_apoio) values ("Doa
 insert into tipo_apoio(tipo,valor,descricao,fk_periodicidade_apoio) values ("Doação Prata", 150,"Agradecimento nas redes sociais com fotos do evento e divulgação com midia kit",1);
 insert into tipo_apoio(tipo,valor,descricao,fk_periodicidade_apoio) values ("Doação Bronze", 200,"Todos os beneficios anteriores, logo na camisa e no material de divulgação como bottons",1);
 
-insert into voluntario_org(fk_tipo_voluntarios,nome,email,senha) values (1, "voluntário organizador", "ester@jpd.com","!@#123qwE");
+insert into voluntario_org(fk_tipo_voluntarios,nome,email,senha) values (1, "Ester", "ester@jpd.com","!@#123qwE");
+INSERT INTO `jpd`.`voluntario_org` (`fk_tipo_voluntarios`, `nome`, `email`, `senha`) VALUES ('1', 'Equipe Rocket', 'teste@teste.com', '1234');
+
+INSERT INTO `jpd`.`acoes` (`fk_voluntario_org`, `nome_inst`, `localizacao`, `num_voluntarios`, `num_beneficiados`, `regional`) VALUES ('2', 'Equipe Rocket', 'Rua alo, bairro seu joao', '15', '30', '1');
+INSERT INTO `jpd`.`acoes` (`fk_voluntario_org`, `nome_inst`, `localizacao`, `num_voluntarios`, `num_beneficiados`, `regional`) VALUES ('2', 'Rocket', 'rua alo, bairro seu jose', '10', '15', '2');
+INSERT INTO `jpd`.`acoes` (`fk_voluntario_org`, `nome_inst`, `localizacao`, `num_voluntarios`, `num_beneficiados`, `regional`) VALUES ('2', 'Equipe', 'rua iei, bairro uuu', '20', '50', '3');
+INSERT INTO `jpd`.`acoes` (`fk_voluntario_org`, `nome_inst`, `localizacao`, `num_voluntarios`, `num_beneficiados`, `regional`) VALUES ('2', 'Dell', 'rua tarlala, bairro iei', '8', '25', '4');
+INSERT INTO `jpd`.`acoes` (`fk_voluntario_org`, `nome_inst`, `localizacao`, `num_voluntarios`, `num_beneficiados`, `regional`) VALUES ('2', 'Rachel', 'rua la bairro ca', '5', '6', '5');
+INSERT INTO `jpd`.`acoes` (`fk_voluntario_org`, `nome_inst`, `localizacao`, `num_voluntarios`, `num_beneficiados`, `regional`) VALUES ('2', 'Vaneska', 'rua ali bairro aqui', '12', '12', '6');
+INSERT INTO `jpd`.`acoes` (`fk_voluntario_org`, `nome_inst`, `localizacao`, `num_voluntarios`, `num_beneficiados`, `regional`) VALUES ('2', 'Oliver', 'rua lua', '11', '10', '7');
+INSERT INTO `jpd`.`acoes` (`fk_voluntario_org`, `nome_inst`, `localizacao`, `num_voluntarios`, `num_beneficiados`, `regional`) VALUES ('2', 'Lilian', 'bairro oxe', '4', '8', '8');
+INSERT INTO `jpd`.`acoes` (`fk_voluntario_org`, `nome_inst`, `localizacao`, `num_voluntarios`, `num_beneficiados`, `regional`) VALUES ('2', 'Jovens Pela Diferença', 'Fortaleza-CE', '7', '30', '9');
+INSERT INTO `jpd`.`acoes` (`fk_voluntario_org`, `nome_inst`, `localizacao`, `num_voluntarios`, `num_beneficiados`, `regional`) VALUES ('2', 'Projeto I', 'UFC', '20', '50', '10');
+
 # where para causas nao relacionais e INNER JOIN para pegar informaçoes entre tabelas
