@@ -1,4 +1,5 @@
 # Criação das categorias
+DROP DATABASE jpd;
 CREATE database jpd;
 USE jpd;
 
@@ -66,17 +67,17 @@ CREATE TABLE dados_gerais (
 CREATE TABLE acoes (
 	id_acoes int NOT NULL AUTO_INCREMENT,
     fk_voluntario_org int NOT NULL,
-	fk_tipo_acao int NOT NULL,
-	fk_tipo_doacao int NOT NULL,
-	nome VARCHAR(45) NOT NULL,
-    locali VARCHAR(45) NOT NULL,
+	#fk_tipo_acao int NOT NULL,
+	#fk_tipo_doacao int NOT NULL,
+	nome_inst VARCHAR(45) NOT NULL,
+    localizacao VARCHAR(45) NOT NULL,
     num_voluntarios int NOT NULL,
-	num_beneficiados int NOT NULL,
+	num_beneficiados int,
     regional VARCHAR(45) NOT NULL,
     PRIMARY KEY (id_acoes),
-	FOREIGN KEY (fk_voluntario_org) REFERENCES voluntario_org(id_voluntario_org),
-	FOREIGN KEY (fk_tipo_acao) REFERENCES tipo_acao(id_tipo_acao),
-	FOREIGN KEY (fk_tipo_doacao) REFERENCES tipo_doacao(id_tipo_doacao)
+	FOREIGN KEY (fk_voluntario_org) REFERENCES voluntario_org(id_voluntario_org)
+	#FOREIGN KEY (fk_tipo_acao) REFERENCES tipo_acao(id_tipo_acao),
+	#FOREIGN KEY (fk_tipo_doacao) REFERENCES tipo_doacao(id_tipo_doacao)
 );
 
 # insercao de dados iniciais
@@ -102,7 +103,7 @@ insert into tipo_voluntarios(tipo,descricao) values ("Assembleia", "Todas as pes
 
 insert into tipo_apoio(tipo,valor,descricao,fk_periodicidade_apoio) values ("Doação Ouro", 100,"Agradecimento nas redes sociais com fotos do evento",1);
 insert into tipo_apoio(tipo,valor,descricao,fk_periodicidade_apoio) values ("Doação Prata", 150,"Agradecimento nas redes sociais com fotos do evento e divulgação com midia kit",1);
-insert into tipo_apoio(tipo,valor,descricao,fk_periodicidade_apoio) values ("Doação Bronza", 200,"Todos os beneficios anteriores, logo na camisa e no material de divulgação como bottons",1);
+insert into tipo_apoio(tipo,valor,descricao,fk_periodicidade_apoio) values ("Doação Bronze", 200,"Todos os beneficios anteriores, logo na camisa e no material de divulgação como bottons",1);
 
 insert into voluntario_org(fk_tipo_voluntarios,nome,email,senha) values (1, "voluntário organizador", "ester@jpd.com","!@#123qwE");
 # where para causas nao relacionais e INNER JOIN para pegar informaçoes entre tabelas

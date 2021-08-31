@@ -1,20 +1,25 @@
-<%- contentFor( 'body') %>
-
+<%- contentFor( 'body')%>
+<script>
+    if(localStorage.getItem("user")){
+        window.location.href = "/cadastro_acao";
+    }
+</script>
 <main>
 <div id="login-sec">
+    <% let linkLogin ="/cadastro/login"; %>
     <h3>Bem vindo, Administrador!</h3>
     <br>
     <br>
     <hr>
 
-        <form id="form-login" action="/cadastro_acao">
-            <input class="input-logar" type="text" name="login" placeholder="Login">
+        <form name="fLogin" id="formLogin">
+            <input class="input-logar" type="text" name="email" placeholder="E-mail">
             <br>
             <br>
             <input class="input-logar" type="password" name="senha" placeholder="Senha">
             <br>
             <br>
-            <input type="button" id="login-botao" onclick="login_usuario()" value="Login">
+            <input type="button" value = "Login" id="login-botao" onclick="loginVoluntario(document.fLogin,'<%=linkLogin%>')" class = "btn">
         </form>
     
 </div>

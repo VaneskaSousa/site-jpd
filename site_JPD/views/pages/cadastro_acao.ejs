@@ -1,19 +1,20 @@
+
 <%- contentFor( 'body') %>
 
 <main id="main-acao">
 <h2>Atualize as ações aqui!</h2>
             <div id='bloco-acao'>
+                <% let linkAcao ="/cadastro/cadastro_acao"; %>
                 <h4>Cadastro de dados de nova ação</h4>
                 <hr>
-                <form id="form-acao" action="">
-                    Em qual regional o evento foi realizado?
-                    <input class="input-acao" type="text">
-                    Número de voluntários
-                    <input class="input-acao" type="text">
-                    Instituição beneficiada
-                    <input class="input-acao" type="text">
-                    Inserir ou atualizar foto ou vídeo
-                    <input class="img-acao" type="file">
+                <form name = "fAcao" id="formCadastro">
+                    <input class="input-acao" type="text" name="nome_inst" placeholder="Instituição beneficiada:">
+                    <input class="input-acao" type="text" name="localizacao" placeholder="Endereço da Instituição:">
+                    <input class="input-acao" type="number" name="num_voluntarios" placeholder="Quantos voluntários que participaram da ação?">
+                    <input class="input-acao" type="number" name="num_beneficiados" placeholder="Quantas pessoas foram beneficiadas?">
+                    <input class="input-acao" type="number" name="regional" placeholder="Qual a regional de Fortaleza no qual a ação ocoreu?">
+                    <br>
+                    <input type="button" value = "Cadastrar Ação" id="cadastro-botao" onclick="cadastroAcao(document.fAcao,'<%=linkAcao%>')" class = "btn">
                 </form>
             </div>
 
