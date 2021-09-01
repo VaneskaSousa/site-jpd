@@ -51,6 +51,7 @@ router.post('/consulta/acao',(req,res)=>{        //consulta do mySQL
         });
 });
 
+
 router.post('/cadastro/cadastro_acao',(req,res)=>{   
     console.log(req);     
     mysql.query("INSERT INTO acoes (`fk_voluntario_org`,`nome_inst`, `localizacao`, `num_voluntarios`, `num_beneficiados`, `regional`) VALUES (?,?, ?, ?, ?, ?)",

@@ -36,7 +36,7 @@ function loginVoluntario(form, link) {
 
         /*
         * No http.onload é rodado assincrono
-        */
+       */
         http.onload = (status, response) => {
             if (http.status === 200) { //testa se o envio foi bem sucedido
                 let resp = JSON.parse(http.responseText);
@@ -142,9 +142,11 @@ function cadastroAcao(form, link) {
                 console.log("Erro ao cadastrar. Tente novamente", http.responseText);
             }
         };
+       
     }
 
 }
+
 
 function getRegionalInfo(link, regional) {
 
@@ -171,7 +173,7 @@ function getRegionalInfo(link, regional) {
             }
         }
     }
-}
+} 
 
 function altera_mapa(data, regional) {
     //data é a lista que retorna do servidor
