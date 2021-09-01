@@ -191,3 +191,53 @@ function altera_mapa(data) {
 function pageScroll(x) {
     window.scrollTo({ top: x, behavior: 'smooth' })
 }
+
+function enviarDadosDoacao(form, link){
+    
+    const http = new XMLHttpRequest(); //cria um objeto para requisição ao servidor
+    const url=link;
+    var myForm = document.getElementById('doacao');
+    let data = {name: "", email: "", code: ""};
+    data.name = myForm.name.value;
+    data.email = myForm.email.value;
+    data.code = myForm.code.value;
+    alert(data.name+' é '+myForm.name.value);
+    alert(data.email+' é '+myForm.email.value);
+    alert(data.code+' é '+myForm.code.value);
+    let dataToSend = JSON.stringify(data);
+
+    http.open('POST',link,true); //abre uma comunicação com o servidor através de uma requisição POST
+    http.setRequestHeader('Content-Type','application/json'); //constroi um cabecalho http para envio dos dados
+    
+    http.send(dataToSend);
+
+    /* este codigo abaixo foi colocado para que a interface de cadastro so seja modificada quando se receber um aviso do servidor que a modificacao foi feita com sucesso. No caso o aviso vem na forma do codigo 200 de HTTP: OK */
+
+    /*
+    readyState:
+    0: request not initialized
+    1: server connection established
+    2: request received
+    3: processing request
+    4: request finished and response is ready
+
+    status:
+    200: "OK"
+    403: "Forbidden"
+    404: "Page not found"
+    */
+
+    // baseado nos valores acima apresentados, o codigo abaixo mostra o que foi enviado pelo servidor como resposta ao envio de dados. No caso, se o request foi finalizado e o response foi recebido, a mensagem recebida do servidor eh mostrada no console do navegador. esse codigo foi feito apenas para verificar se tudo ocorreu bem no envio
+
+    http.onload = ()=>{
+        if (http.readyState === 4 && http.status === 200) {
+            //transforma a string  em formato JSON enviada pelo servidor novamente no seu tipo de dado anterior (lista de objetos)
+            alert("Envio de doação confirmada!");
+            window.location.href = "/";
+        } else {
+
+        }
+        
+
+    }
+}

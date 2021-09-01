@@ -676,3 +676,8 @@ footer h5 {
 .img-acao {
   display: block;
 }
+
+#enviada-acao {
+  margin: 200px 0px;
+  text-align: center;
+}
