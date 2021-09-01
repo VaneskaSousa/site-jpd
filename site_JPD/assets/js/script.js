@@ -36,7 +36,7 @@ function loginVoluntario(form, link) {
 
         /*
         * No http.onload é rodado assincrono
-        */
+       */
         http.onload = (status, response) => {
             if (http.status === 200) { //testa se o envio foi bem sucedido
                 let resp = JSON.parse(http.responseText);
@@ -99,7 +99,7 @@ function validaFormAcao(form) {
             alert("Digite uma regional valida (1 a 12)");
             form.regional.focus();
             isReady = false;
-        }*
+        }*/
         
     }
     return isReady;
@@ -141,9 +141,11 @@ function cadastroAcao(form, link) {
                 console.log("Erro ao cadastrar. Tente novamente", http.responseText);
             }
         };
+       
     }
 
 }
+
 
 function getRegionalInfo(link, regional) {
 
@@ -172,7 +174,7 @@ function getRegionalInfo(link, regional) {
             }
         }
     }
-}
+} 
 
 function altera_mapa(data) {
     //data é a lista que retorna do servidor
