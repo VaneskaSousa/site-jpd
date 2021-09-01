@@ -407,6 +407,10 @@ main {
   margin-bottom: 30px;
 }
 
+#lateral-direita div h5 {
+  text-align: center;
+}
+
 #lateral-direita div {
   padding: 100px 0px;
 }

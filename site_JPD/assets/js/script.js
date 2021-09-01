@@ -95,11 +95,11 @@ function validaFormAcao(form) {
             isReady = false;
         }
 
-        /*if (Number.isInteger(Number(form.regional.value)) == 0) {
+        if (Number.isInteger(Number(form.regional.value)) == 0) {
             alert("Digite uma regional valida (1 a 12)");
             form.regional.focus();
             isReady = false;
-        }*
+        }
         
     }
     return isReady;
@@ -134,6 +134,7 @@ function cadastroAcao(form, link) {
         /*
         * No http.onload é rodado assincrono
         */
+        
         http.onload = (status, response) => {
             if (http.status === 200) { //testa se o envio foi bem sucedido
                 alert("Ação cadastrada com sucesso! Acesse a página inicial para conferir as alterações");
@@ -159,14 +160,12 @@ function getRegionalInfo(link, regional) {
     http.onload = () => {
         if (http.readyState === 4 && http.status === 200) {
             //transforma a string  em formato JSON enviada pelo servidor novamente no seu tipo de dado anterior (lista de objetos)
-            console.log(http.responseText);
             acao = JSON.parse(http.responseText);
-            console.log("esta é a acao",acao);
             altera_mapa(acao);
         } else {
             if(http.status === 600){
                 acao = 0;
-                altera_mapa(acao);
+                altera_mapa(acao, regional);
             }else{
                  console.log("Erro no servidor", http.responseText);
             }
@@ -174,16 +173,23 @@ function getRegionalInfo(link, regional) {
     }
 }
 
-function altera_mapa(data) {
+function altera_mapa(data, regional) {
     //data é a lista que retorna do servidor
     var info = document.getElementById("lateral-direita");
     info.removeChild(info.firstElementChild);
     var content = document.createElement("div");
     
     if(!data){
-        content.innerHTML = '<h3>Infelizmente não foram realizadas ações nesta regional. Considere doar para isso <3</h3>';
+        content.innerHTML = '<h5>Infelizmente não foram realizadas ações na regional '+regional+'. Considere doar para isso <3</h3>';
     }else{
-        content.innerHTML = '<h3>Regional ' + data.regional + '</h3>';
+        content.innerHTML = '<h3>Regional ' + data.regional + '</h3>'+
+                            '<img id="img-regional" src="img/fotos/img_regional' + data.regional + '.jpg" alt="Regional '+data.regional+'">'+
+                            '<h5>'+data.nome_inst+'</h5><br>'+
+                            '<h5>'+data.localizacao+'</h5><br>'+
+                            '<h5>'+data.num_voluntarios+' Voluntários</h5><br>'+
+                            '<h5>'+data.num_beneficiados+' Beneficiados</h5><br>';
+
+        // content.innerHTML = '<img id="img-regional" src="/assets/img/fotos/img_regional' + data.regional + '"alt="Regional '+data.regional+'">';
     }
     info.appendChild(content);
 }
@@ -201,9 +207,6 @@ function enviarDadosDoacao(form, link){
     data.name = myForm.name.value;
     data.email = myForm.email.value;
     data.code = myForm.code.value;
-    alert(data.name+' é '+myForm.name.value);
-    alert(data.email+' é '+myForm.email.value);
-    alert(data.code+' é '+myForm.code.value);
     let dataToSend = JSON.stringify(data);
 
     http.open('POST',link,true); //abre uma comunicação com o servidor através de uma requisição POST
