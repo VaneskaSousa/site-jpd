@@ -95,11 +95,11 @@ function validaFormAcao(form) {
             isReady = false;
         }
 
-        if (Number.isInteger(Number(form.regional.value)) == 0) {
+        /*if (Number.isInteger(Number(form.regional.value)) == 0) {
             alert("Digite uma regional valida (1 a 12)");
             form.regional.focus();
             isReady = false;
-        }
+        }*/
         
     }
     return isReady;
@@ -200,49 +200,54 @@ function pageScroll(x) {
     window.scrollTo({ top: x, behavior: 'smooth' })
 }
 
-function enviarDadosDoacao(form, link){
-    
-    const http = new XMLHttpRequest(); //cria um objeto para requisição ao servidor
-    const url=link;
-    var myForm = document.getElementById('doacao');
-    let data = {name: "", email: "", code: ""};
-    data.name = myForm.name.value;
-    data.email = myForm.email.value;
-    data.code = myForm.code.value;
-    let dataToSend = JSON.stringify(data);
-
-    http.open('POST',link,true); //abre uma comunicação com o servidor através de uma requisição POST
-    http.setRequestHeader('Content-Type','application/json'); //constroi um cabecalho http para envio dos dados
-    
-    http.send(dataToSend);
-
-    /* este codigo abaixo foi colocado para que a interface de cadastro so seja modificada quando se receber um aviso do servidor que a modificacao foi feita com sucesso. No caso o aviso vem na forma do codigo 200 de HTTP: OK */
-
-    /*
-    readyState:
-    0: request not initialized
-    1: server connection established
-    2: request received
-    3: processing request
-    4: request finished and response is ready
-
-    status:
-    200: "OK"
-    403: "Forbidden"
-    404: "Page not found"
-    */
-
-    // baseado nos valores acima apresentados, o codigo abaixo mostra o que foi enviado pelo servidor como resposta ao envio de dados. No caso, se o request foi finalizado e o response foi recebido, a mensagem recebida do servidor eh mostrada no console do navegador. esse codigo foi feito apenas para verificar se tudo ocorreu bem no envio
-
-    http.onload = ()=>{
-        if (http.readyState === 4 && http.status === 200) {
-            //transforma a string  em formato JSON enviada pelo servidor novamente no seu tipo de dado anterior (lista de objetos)
-            alert("Envio de doação confirmada!");
-            window.location.href = "/";
-        } else {
-
+function validaDadosDoacao(form){
+    isReady = true;
+    if(form.name.value == "" || form.email.value == "" || form.code.value ==""){
+        alert("Preencha todos os campos");
+        isReady = false;
+    }else{
+        if (form.email.value.indexOf("@") == -1 || form.email.value.indexOf(".") == -1) {
+            alert("Email inválido");
+            form.email.focus();
+            isReady = false;
+        }
+        if(form.code.value.indexOf("https:") == 1 || form.code.value.indexOf("http:") == 1){
+            alert("Insira um endereço de compartilhamento valido \n(começando com 'https:' ou 'http:')")
+            form.code.focus();
+            isReady = false;
         }
         
-
+    }
+    return isReady;
+}
+function enviarDadosDoacao(form, link){
+    if(validaDadosDoacao(form)){
+        const http = new XMLHttpRequest(); //cria um objeto para requisição ao servidor
+        const url=link;
+        //var myForm = document.getElementById('doacao');
+        console.log(form);
+        let data = {name: "", email: "", code: ""};
+        data.name = form.name.value;
+        data.email = form.email.value;
+        data.code = form.code.value;
+        
+        let dataToSend = JSON.stringify(data);
+    
+        http.open('POST',link,true); //abre uma comunicação com o servidor através de uma requisição POST
+        http.setRequestHeader('Content-Type','application/json'); //constroi um cabecalho http para envio dos dados
+        
+        http.send(dataToSend);
+    
+        http.onload = ()=>{
+            if (http.readyState === 4 && http.status === 200) {
+                //transforma a string  em formato JSON enviada pelo servidor novamente no seu tipo de dado anterior (lista de objetos)
+                alert("Envio de doação confirmada e salva no banco de dados!");
+                window.location.href = "/";
+            } else {
+                alert("Erro ao cadastrar. Por favor recarregue a pagina ou tente novamente mais tarde");
+                console.log("Erro no servidor", http.responseText);
+            }
+            
+        }
     }
 }

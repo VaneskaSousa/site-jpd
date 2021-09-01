@@ -48,12 +48,12 @@ CREATE TABLE voluntario_org (
 );
 CREATE TABLE patrocinador (
 	idpatrocinador int NOT NULL AUTO_INCREMENT,
-    fk_tipo_apoio int NOT NULL,
+    #fk_tipo_apoio int NOT NULL,
     nome VARCHAR(45) NOT NULL,
     email VARCHAR(140) NOT NULL,
     comprovante VARCHAR(255) NOT NULL,
-    PRIMARY KEY (idpatrocinador),
-	FOREIGN KEY (fk_tipo_apoio) REFERENCES tipo_apoio(id_tipo_apoio)
+    PRIMARY KEY (idpatrocinador)
+	#FOREIGN KEY (fk_tipo_apoio) REFERENCES tipo_apoio(id_tipo_apoio)
 );
 
 # Criacao de dados e acoes
@@ -101,9 +101,10 @@ insert into tipo_voluntarios(tipo,descricao) values ("Assembleia", "Todas as pes
 insert into tipo_voluntarios(tipo,descricao) values ("Assembleia", "Todas as pessoas que querem contribuir nas ações");
 insert into tipo_voluntarios(tipo,descricao) values ("Assembleia", "Todas as pessoas que querem contribuir nas ações");
 
-insert into tipo_apoio(tipo,valor,descricao,fk_periodicidade_apoio) values ("Doação Ouro", 100,"Agradecimento nas redes sociais com fotos do evento",1);
+insert into tipo_apoio(tipo,valor,descricao,fk_periodicidade_apoio) values ("Doação Ouro", 200,"Agradecimento nas redes sociais com fotos do evento",1);
 insert into tipo_apoio(tipo,valor,descricao,fk_periodicidade_apoio) values ("Doação Prata", 150,"Agradecimento nas redes sociais com fotos do evento e divulgação com midia kit",1);
-insert into tipo_apoio(tipo,valor,descricao,fk_periodicidade_apoio) values ("Doação Bronze", 200,"Todos os beneficios anteriores, logo na camisa e no material de divulgação como bottons",1);
+insert into tipo_apoio(tipo,valor,descricao,fk_periodicidade_apoio) values ("Doação Bronze", 100,"Todos os beneficios anteriores, logo na camisa e no material de divulgação como bottons",1);
+INSERT INTO `jpd`.`tipo_apoio` (`tipo`, `valor`, `descricao`, `fk_periodicidade_apoio`) VALUES ('Doacao Menor', '99', 'Agradecimento nas redes sociais', '2');
 
 insert into voluntario_org(fk_tipo_voluntarios,nome,email,senha) values (1, "Ester", "ester@jpd.com","!@#123qwE");
 INSERT INTO `jpd`.`voluntario_org` (`fk_tipo_voluntarios`, `nome`, `email`, `senha`) VALUES ('1', 'Equipe Rocket', 'teste@teste.com', '1234');

@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 
-//tentei passar como variavel de ambiente e setando essas variaveis atraves do nodemon mas não deu certo :/ 
+//tentei passar como variavel de ambiente e setando essas variaveis atraves do nodemon mas não deu certo :/ Exclui a parte do nodemoon so pra ter certeza
 var mypool = mysql.createConnection({
     "user":"root",
     "password":"12112019",
