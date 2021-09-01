@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const mysql = require('../../mysql').pool;
 router.use(express.static('assets'));
-//express.use(session({secret: 'ssshhhhh',saveUninitialized: true,resave: true}));
 
 router.get('/',(req,res)=>{ //callback - funcao que trata dado evento GET
     res.render('pages/home');
@@ -17,8 +16,13 @@ router.get('/cadastro_acao',(req,res)=>{ //callback - funcao que trata dado even
 });
 
 
-router.get('/confirma_acao',(req,res)=>{ //callback - funcao que trata dado evento  GET
-    res.render('pages/confirma_acao');
+router.get('/enviada_acao',(req,res)=>{ //callback - funcao que trata dado evento  GET
+    res.render('pages/enviada_acao'); 
+});
+
+
+router.get('/confirma_doacao',(req,res)=>{ //callback - funcao que trata dado evento  GET
+    res.render('pages/confirma_doacao');
 });
 
 router.post('/consulta/acao',(req,res)=>{        //consulta do mySQL
@@ -90,6 +94,13 @@ router.post('/cadastro/login',(req,res)=>{
                 }
             }
     });
+});
+
+router.post('/confirma_doacao/enviar',(req,res)=>{
+    console.log(req.body.name+' '+req.body.email+ ' '+req.body.code);
+    res.sendStatus(200);
+    // teste = req.body;
+    // console.log(teste.get('name'));
 });
 
 //Essa linha permite que este código seja exportado como um módulo e possa ser usado em outras partes da aplicação.

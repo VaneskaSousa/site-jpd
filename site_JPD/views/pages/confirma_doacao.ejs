@@ -1,0 +1,30 @@
+<%- contentFor( 'body')%>
+
+<main>
+<div id="login-sec">
+    <% let linkLogin ="/cadastro/login"; %>
+    <h3>Bem vindo, Administrador!</h3>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+        <form name="doacao" id="doacao" method="post" enctype="multipart/form-data">
+            <label for="name">Digite seu nome:</label>
+            <input class="input-logar" type="text" name="name">
+            <br>
+            <br>
+            <label for="email">Digite seu email:</label>
+            <input class="input-logar" type="text" name="email">
+            <br>
+            <br>
+            <label for="code">Digite o link para seu comprovante de pagamento:<br></label>
+            <label for="code" style="font-style:italic; font-size:14px">*Faça o upload do seu comprovante de pagamento no google drive (ou qualquer repositório de imagens)</label>
+            <input class="input-logar" type="text" name="code">
+            <br>
+            <br>
+            <input type="button" value = "Enviar" id="login-botao" onclick="enviarDadosDoacao(document.doacao,'/confirma_doacao/enviar')" class = "btn">
+        </form>
+</div>
+</main>

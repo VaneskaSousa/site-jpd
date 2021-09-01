@@ -29,22 +29,26 @@
 
 body {
   font-family: "Quicksand", roboto, sans-serif;
-  background: #FAFFFE;
+  background: #fafffe;
   width: 1920px;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 25px;
-  color: #B248EE;
+
+  color: #b248ee;
 }
 
 h1 {
-  font-family:  Montserrat;
+  font-family: Montserrat;
+
   font-style: normal;
   font-weight: bold;
   font-size: 90px;
   margin-bottom: 60px;
-  color: #B248EE;
+
+  color: #b248ee;
+
 }
 
 h2 {
@@ -52,7 +56,9 @@ h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
-  color:#B248EE;
+
+  color: #b248ee;
+
 }
 
 h3 {
@@ -67,7 +73,8 @@ h4 {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  color:#B248EE;
+  color: #b248ee;
+
 }
 
 h5 {
@@ -82,18 +89,16 @@ h6 {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-
   text-align: center;
 }
 
 p {
-  
   font-family: Quicksand;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 25px;
-  color: #43444D;
+  color: #43444d;
 }
 a {
   text-decoration: none;
@@ -102,7 +107,7 @@ a {
 hr {
   height: 2px;
   /*color: #B248EE;*/
-  background-color: #B248EE;
+  background-color: #b248ee;
 }
 /* ===Fim de Estilo Corpo=== */
 
@@ -113,17 +118,26 @@ header{
   position: sticky;
   top: 0;
   /*background-color: #c0d6df;*/
-  background: linear-gradient(90deg, #A5ABF8 6.3%, #A69CF7 15.66%, #A87BF2 27.99%, #DB76FF 48.84%, #B248EE 69.68%, #8A1FC7 87.97%), #A0E5FF;
-  height: 124px;
+  background: linear-gradient(
+      90deg,
+      #a5abf8 6.3%,
+      #a69cf7 15.66%,
+      #a87bf2 27.99%,
+      #db76ff 48.84%,
+      #b248ee 69.68%,
+      #8a1fc7 87.97%
+    ),
+    #a0e5ff;
+  height: 100px;
   width: 1920px;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
   z-index: 20;
 }
 
-#header-espaco {
+/* #header-espaco {
   background-color: #eaeaea;
   height: 24px;
-}
+} */
 #logo {
   display: inline-flex;
   align-items: center;
@@ -144,7 +158,7 @@ header{
   font-weight: bold;
   font-size: 72px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-left: 20px;
 }
 
@@ -231,11 +245,9 @@ main {
   height: 150px;
   left: 69px;
   top: 581px;
-
   background: rgba(255, 247, 240, 0.7);
   border-radius: 10px;
 }
-
 #inicio-text {
   margin: 30px 48px;
   font-family: Quicksand;
@@ -244,10 +256,8 @@ main {
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-
   color: #0b77a3;
 }
-
 
 .carrosel-inicio {
   position: absolute;
@@ -310,8 +320,9 @@ main {
   justify-content: center;
   position: absolute;
   top: 500px;
-  background: #A0E5FF;
-  z-index:-2;
+
+  background: #a0e5ff;
+  z-index: -2;
 }
 
 .dado-ong {
@@ -320,7 +331,8 @@ main {
   align-items: center;
   justify-content: center;
   width: 33.33%;
-  color:#B248EE;
+  color: #b248ee;
+
 }
 
 #foto-sobre {
@@ -437,6 +449,10 @@ main {
   margin-bottom: 30px;
 }
 
+#lateral-direita div h5 {
+  text-align: center;
+}
+
 #lateral-direita div {
   padding: 100px 0px;
 }
@@ -450,13 +466,14 @@ main {
 /* ---Fim de Seção Time---*
 /*----------*/
 /* ---Seção Mapa---*/
-#imagem-blob{
+#imagem-blob {
   position: absolute;
   width: 1920px;
   height: 93px;
   left: -2px;
   top: 3185px;
-  z-index:-4;
+  z-index: -4;
+
 }
 #time-sec {
   margin: 200px 0px;
@@ -605,7 +622,7 @@ footer div {
 }
 footer hr {
   width: 405px;
-  border: 1px solid #B248EE;
+  border: 1px solid #b248ee;
 }
 
 footer h5 {
@@ -625,26 +642,31 @@ footer h5 {
 /*=================*/
 
 #login-sec {
-  margin-top: 100px;
+  margin: 200px 0px;
   padding: 0px 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#form-login {
-  margin-top: 140px;
+#formLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formCadastro {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .input-logar {
-  
-
-  background: #FFFFFF;
-  border: 2px solid #DB76FF;
+  background: #ffffff;
+  border: 2px solid #db76ff;
   box-sizing: border-box;
   border-radius: 10px;
-
-  display: flex;
   width: 540px;
   height: 70px;
   font-family: "Quicksand", sans-serif;
@@ -657,25 +679,18 @@ footer h5 {
 }
 
 #login-botao {
-
-  
-  position: absolute;
   width: 195px;
   height: 70px;
-  left: 861px;
-  top: 400px;
 
-  background: #DB76FF;
+  background: #db76ff;
   border-radius: 10px;
-  font-family:  Quicksand, sans-serif;
+  font-family: Quicksand, sans-serif;
   font-size: 40px;
-
   border: none;
   color: white;
   padding: 15px 50px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
@@ -703,8 +718,6 @@ footer h5 {
   margin: 32px 0px 86px 0px;
 }
 
-
-
 #main-acao h4 {
   display: block;
   margin-bottom: 16px;
@@ -713,7 +726,6 @@ footer h5 {
 #main-acao hr {
   margin-bottom: 52px;
 }
-
 
 .input-acao {
   display: block;
@@ -727,4 +739,9 @@ footer h5 {
 
 .img-acao {
   display: block;
+}
+
+#enviada-acao {
+  margin: 200px 0px;
+  text-align: center;
 }
