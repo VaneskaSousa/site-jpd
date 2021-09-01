@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
 ::placeholder {
-  font-family: Quicksand;
+  font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -40,7 +41,7 @@ body {
 }
 
 h1 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
 
   font-style: normal;
   font-weight: bold;
@@ -48,44 +49,41 @@ h1 {
   margin-bottom: 60px;
 
   color: #b248ee;
-
 }
 
 h2 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
 
   color: #b248ee;
-
 }
 
 h3 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
 }
 
 h4 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   color: #b248ee;
-
 }
 
 h5 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: bold;
   font-weight: 500;
   font-size: 30px;
 }
 
 h6 {
-  font-family: Quicksand;
+  font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -93,7 +91,7 @@ h6 {
 }
 
 p {
-  font-family: Quicksand;
+  font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -114,7 +112,7 @@ hr {
 /*==========================================================================================*/
 
 /* ===Estilo Header=== */
-header{
+header {
   position: sticky;
   top: 0;
   /*background-color: #c0d6df;*/
@@ -153,7 +151,7 @@ header{
 }
 
 #logotipo {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
@@ -250,7 +248,7 @@ main {
 }
 #inicio-text {
   margin: 30px 48px;
-  font-family: Quicksand;
+  font-family: 'Quicksand', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -306,10 +304,9 @@ main {
 
 /*!!!Bloco de dados da ONG!!!*/
 #dados-sobre {
-  
   display: inline-flex;
   margin-top: 170px;
-  font-family:Quicksand;
+  font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -326,13 +323,12 @@ main {
 }
 
 .dado-ong {
-  font-family: Quicksand;
+  font-family: "Quicksand", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 33.33%;
   color: #b248ee;
-
 }
 
 #foto-sobre {
@@ -473,7 +469,6 @@ main {
   left: -2px;
   top: 3185px;
   z-index: -4;
-
 }
 #time-sec {
   margin: 200px 0px;
@@ -519,11 +514,30 @@ main {
   color: white;
 }
 
+.hover-wrap {
+  position: relative;
+  display: inline;
+}
+
 .foto-vol {
   display: flex;
   width: 144px;
   height: 144px;
   border-radius: 100px;
+}
+
+.vol-hover {
+  position: absolute;
+
+  visibility: hidden;
+}
+
+.hover-wrap:hover .vol-hover {
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  text-align: center;
+  visibility: visible;
 }
 
 /* ---Fim de Seção Time--*
@@ -562,7 +576,6 @@ main {
 .plano h3 {
   margin: 30px 132px;
   margin-bottom: 40px;
-  
 }
 
 .plano a {
@@ -583,7 +596,7 @@ plano a:visited {
 }
 
 .plano h5 {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -598,6 +611,30 @@ plano a:visited {
   margin-bottom: 200px;
 }
 
+#envia-doacao {
+  width: 240px;
+  height: 80px;
+  background: #db76ff;
+  border-radius: 10px;
+  font-family: Quicksand, sans-serif;
+  font-size: 40px;
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#doacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 /* ---Fim de Seção Ajude--*/
 /*----------*/
 /* ===Fim de Principal=== */
@@ -642,7 +679,7 @@ footer h5 {
 /*=================*/
 
 #login-sec {
-  margin: 200px 0px;
+  margin: 100px 0px;
   padding: 0px 125px;
   display: flex;
   flex-direction: column;
@@ -660,6 +697,19 @@ footer h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#cadastro-botao {
+  background: #db76ff;
+  border-radius: 10px;
+  color: white;
+  width: 195px;
+  height: 70px;
+  font-size: 24px;
+}
+
+#cadastro-botao:hover {
+  cursor: pointer;
 }
 
 .input-logar {
@@ -691,7 +741,7 @@ footer h5 {
   padding: 15px 50px;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
@@ -708,6 +758,7 @@ footer h5 {
 /*=================*/
 
 #main-acao {
+  margin: 100px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -728,10 +779,12 @@ footer h5 {
 }
 
 .input-acao {
+  text-align: center;
   display: block;
   height: 60px;
   width: 650px;
   margin: 6px 0px 52px 0px;
+  font-size: 20px;
   border: none;
   background-color: #bce6f6;
   outline: none;

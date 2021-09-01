@@ -8,11 +8,16 @@
                 <h4>Cadastro de dados de nova ação</h4>
                 <hr>
                 <form name = "fAcao" id="formCadastro">
-                    <input class="input-acao" type="text" name="nome_inst" placeholder="Instituição beneficiada:">
-                    <input class="input-acao" type="text" name="localizacao" placeholder="Endereço da Instituição:">
-                    <input class="input-acao" type="number" name="num_voluntarios" placeholder="Quantos voluntários que participaram da ação?">
-                    <input class="input-acao" type="number" name="num_beneficiados" placeholder="Quantas pessoas foram beneficiadas?">
-                    <input class="input-acao" type="number" name="regional" placeholder="Qual a regional de Fortaleza no qual a ação ocoreu?">
+                    <label for="nome_inst">Nome da Instituição/Evento beneficiada:</label>
+                    <input class="input-acao" type="text" name="nome_inst">
+                    <label for="localizacao">Endereço da Instituição/Evento beneficiada:</label>
+                    <input class="input-acao" type="text" name="localizacao">
+                    <label for="localizacao">Quantos voluntários participaram da ação?</label>
+                    <input class="input-acao" type="number" name="num_voluntarios">
+                    <label for="localizacao">Quantas pessoas foram beneficiadas pela ação?</label>
+                    <input class="input-acao" type="number" name="num_beneficiados">
+                    <label for="localizacao">Qual a regional de Fortaleza no qual a ação ocoreu?</label>
+                    <input class="input-acao" type="number" name="regional">
                     <br>
                     <input type="button" value = "Cadastrar Ação" id="cadastro-botao" onclick="cadastroAcao(document.fAcao,'<%=linkAcao%>')" class = "btn">
                 </form>
