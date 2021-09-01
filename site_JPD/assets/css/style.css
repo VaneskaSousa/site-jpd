@@ -29,21 +29,22 @@
 
 body {
   font-family: "Quicksand", roboto, sans-serif;
-  background: #fffef0;
+  background: #fafffe;
   width: 1920px;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 25px;
-  color: #0b77a3;
+  color: #b248ee;
 }
 
 h1 {
-  font-family: Quicksand;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 90px;
   margin-bottom: 60px;
+  color: #b248ee;
 }
 
 h2 {
@@ -51,25 +52,27 @@ h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
+  color: #b248ee;
 }
 
 h3 {
-  font-family: Lato;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
 }
 
 h4 {
-  font-family: Quicksand;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
+  color: #b248ee;
 }
 
 h5 {
-  font-family: Quicksand;
-  font-style: normal;
+  font-family: Montserrat;
+  font-style: bold;
   font-weight: 500;
   font-size: 30px;
 }
@@ -84,9 +87,12 @@ h6 {
 }
 
 p {
-  font-size: 20px;
+  font-family: Quicksand;
   font-style: normal;
-  color: black;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: #43444d;
 }
 a {
   text-decoration: none;
@@ -94,8 +100,8 @@ a {
 
 hr {
   height: 2px;
-  color: #0b77a3;
-  background-color: #0b77a3;
+  /*color: #B248EE;*/
+  background-color: #b248ee;
 }
 /* ===Fim de Estilo Corpo=== */
 
@@ -105,17 +111,27 @@ hr {
 header {
   position: sticky;
   top: 0;
-  background-color: #c0d6df;
-  height: 124px;
+  /*background-color: #c0d6df;*/
+  background: linear-gradient(
+      90deg,
+      #a5abf8 6.3%,
+      #a69cf7 15.66%,
+      #a87bf2 27.99%,
+      #db76ff 48.84%,
+      #b248ee 69.68%,
+      #8a1fc7 87.97%
+    ),
+    #a0e5ff;
+  height: 100px;
   width: 1920px;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
   z-index: 20;
 }
 
-#header-espaco {
+/* #header-espaco {
   background-color: #eaeaea;
   height: 24px;
-}
+} */
 #logo {
   display: inline-flex;
   align-items: center;
@@ -131,12 +147,13 @@ header {
 }
 
 #logotipo {
-  font-family: "Lato";
-  margin-left: 23px;
-  color: #0b77a3;
-  font-size: 48px;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
+  font-size: 72px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+  padding-left: 20px;
 }
 
 /* ---Seção Navegação--- */
@@ -156,14 +173,15 @@ nav {
   height: 50px;
   flex: auto;
   font-size: 24px;
-  color: #0b77a3;
+  color: #ffffff;
   text-decoration: none;
   align-items: center;
   justify-content: center;
 }
 
 .nav-link:hover {
-  background: #ffecdb;
+  /*background: #ffecdb;*/
+  border: 2px solid #ffffff;
   border-radius: 10px;
   height: 60px;
   cursor: pointer;
@@ -179,8 +197,10 @@ nav {
 }
 
 #icone-login:hover {
-  background: #ffecdb;
+  /*background: #ffecdb;*/
+  border: 2px solid #ffffff;
   border-radius: 100px;
+  border: radius 100px;
   cursor: pointer;
 }
 
@@ -208,22 +228,20 @@ main {
 
 #foto-inicio {
   width: 100%;
+  border-radius: 10px;
   height: 100%;
-  border-radius: 20px;
-  opacity: 0.8;
+  opacity: 1;
 }
 
-#inicio-text-box {
+/*#inicio-text-box {
   position: absolute;
   width: 440px;
   height: 150px;
   left: 69px;
   top: 581px;
-
   background: rgba(255, 247, 240, 0.7);
   border-radius: 10px;
 }
-
 #inicio-text {
   margin: 30px 48px;
   font-family: Quicksand;
@@ -232,16 +250,14 @@ main {
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-
   color: #0b77a3;
 }
-
 .carrosel-inicio {
   position: absolute;
   right: 26px;
   top: 362px;
   width: 100px;
-}
+}*/
 
 #links-inicio {
   position: absolute;
@@ -272,13 +288,14 @@ main {
   /*!!!Bloco nossa história contendo header, linha e texto!!!*/
   padding-top: 116px;
   padding-left: 125px;
-  width: 950px;
+  width: 1000px;
+  height: 1000px;
 }
-#nossa-historia hr {
+/*#nossa-historia hr {
   height: 2px;
   color: #0b77a3;
   background-color: #0b77a3;
-}
+}*/
 
 /*!!!Bloco de dados da ONG!!!*/
 #dados-sobre {
@@ -287,27 +304,42 @@ main {
   font-family: Quicksand;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 40px;
   background: #a0e5ff;
   width: 1920px;
   height: 250px;
   text-align: center;
   justify-content: center;
+  position: absolute;
+  top: 500px;
+  background: #a0e5ff;
+  z-index: -2;
 }
 
 .dado-ong {
+  font-family: Quicksand;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 33.33%;
+  color: #b248ee;
 }
+
 #foto-sobre {
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 570px;
-  height: 870px;
+  width: 924px;
+  height: 710px;
   z-index: -1;
+}
+#Blob-sobre {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 1920px;
+  height: 990px;
+  z-index: -3;
 }
 /* ---Fim Seção Sobre---*/
 /*----------*/
@@ -424,6 +456,14 @@ main {
 /* ---Fim de Seção Time---*
 /*----------*/
 /* ---Seção Mapa---*/
+#imagem-blob {
+  position: absolute;
+  width: 1920px;
+  height: 93px;
+  left: -2px;
+  top: 3185px;
+  z-index: -4;
+}
 #time-sec {
   margin: 200px 0px;
   text-align: center;
@@ -486,9 +526,6 @@ main {
   margin-left: 10px;
 }
 
-#ajude-sec hr {
-  margin: 0px 10px;
-}
 #planos {
   display: inline-flex;
   margin-top: 132px;
@@ -521,8 +558,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff7b0;
-  border: 2px solid #0b77a3;
+  background: #ffffff;
   border-radius: 100px;
   text-decoration: none;
   width: 216px;
@@ -535,14 +571,21 @@ plano a:visited {
 }
 
 .plano h5 {
-  margin-bottom: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  padding: 20px;
 }
 
 .plano p {
-  padding: 0px 18px;
-  text-align: center;
-  margin-bottom: 150px;
+  padding: 0px 60px;
+  text-align: left;
+  margin-bottom: 200px;
 }
+
 /* ---Fim de Seção Ajude--*/
 /*----------*/
 /* ===Fim de Principal=== */
@@ -567,7 +610,7 @@ footer div {
 }
 footer hr {
   width: 405px;
-  border: 1px solid #0b77a3;
+  border: 1px solid #b248ee;
 }
 
 footer h5 {
@@ -587,45 +630,57 @@ footer h5 {
 /*=================*/
 
 #login-sec {
-  margin-top: 100px;
+  margin: 200px 0px;
   padding: 0px 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#form-login {
-  margin-top: 140px;
+#formLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formCadastro {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .input-logar {
-  display: flex;
+  background: #ffffff;
+  border: 2px solid #db76ff;
+  box-sizing: border-box;
+  border-radius: 10px;
+
   width: 540px;
   height: 70px;
-  border: 2px solid #0b77a3;
-  border-radius: 10px;
-  outline-width: 0;
-  background: #fffef0;
-
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
+  padding: 15px 50px;
 
   text-align: center;
 }
 
 #login-botao {
-  width: 200px;
-  height: 50px;
+  width: 195px;
+  height: 70px;
 
-  background-color: #0b77a3;
+  background: #db76ff;
+  border-radius: 10px;
+  font-family: Quicksand, sans-serif;
+  font-size: 40px;
+
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 50px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
@@ -653,9 +708,6 @@ footer h5 {
   margin: 32px 0px 86px 0px;
 }
 
-#bloco-acao {
-}
-
 #main-acao h4 {
   display: block;
   margin-bottom: 16px;
@@ -663,8 +715,6 @@ footer h5 {
 
 #main-acao hr {
   margin-bottom: 52px;
-}
-#form-acao {
 }
 
 .input-acao {
