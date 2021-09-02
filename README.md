@@ -24,7 +24,7 @@ A necessidade específica do cliente é uma ferramenta que contribua para a pros
 
 | Área  	| Tecnologias  	 	
 |---	|---		
-| Design  	| Figma  	   	
+| Design  	| Figma, illustrator e photoshop  	   	
 | Front-end  	| HTML, CSS  	   	
 | Backend  	| Node.js com JavaScript
 | Banco de dados | MySQL
