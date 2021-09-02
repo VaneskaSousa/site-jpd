@@ -46,7 +46,6 @@ Por enquanto, o modelo do banco de dados segue a estrutura abaixo:
 #### Requisitos Gerais
 | User Story  	| Status  	 	
 |---	|---	
-
 | RI_1: Informações sobre a instituição. Como patrocinador posso acessar o site da ONG e ser capaz de entender qual o objetivo da organização e como ela está estruturada, quem são, onde estão localizados, quais ações sociais são executadas e como posso entrar em contato. | :heavy_check_mark:
 | RI_2: Cadastro de dados. Como voluntário organizador posso acessar a plataforma web através do site institucional e cadastrar as informações que serão apresentadas na prospecção do patrocinador, como número de ações já realizadas, regiões da cidade que foram impactadas, número de voluntários e as demais informações que o cliente julgar necessário em conjunto desta equipe. | :heavy_check_mark:
 | RI_3: Consistência de dados. Como voluntário organizador posso acessar o site institucional, após fazer o cadastro dos dados na plataforma, e verificar que as informações apresentadas estão conforme os listados por mim | :heavy_check_mark:
