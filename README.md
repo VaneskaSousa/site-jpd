@@ -26,7 +26,7 @@ A necessidade específica do cliente é uma ferramenta que contribua para a pros
 |---	|---		
 | Design  	| Figma, illustrator e photoshop  	   	
 | Front-end  	| HTML, CSS  	   	
-| Backend  	| Node.js com JavaScript
+| Backend  	| NodeJS 
 | Banco de dados | MySQL
 
 Por enquanto, o modelo do banco de dados segue a estrutura abaixo:
