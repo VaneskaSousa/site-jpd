@@ -1,13 +1,13 @@
-<%- contentFor( 'body') %>
+<%- contentFor( 'body' ) %>
 
-<main>
-         
-    <!--Início-->
-    <div id="inicio">
-        <!--Fotos Início-->
-        <img id="foto-inicio" src="img/Blobs/Foto Inicial.png" alt="foto da ong">
-        <!--Caixa de Texto Início-->
-        <!--
+    <main>
+
+        <!--Início-->
+        <div id="inicio">
+            <!--Fotos Início-->
+            <img id="foto-inicio" src="img/Blobs/Foto Inicial.png" alt="foto da ong">
+            <!--Caixa de Texto Início-->
+            <!--
         <div id="inicio-text-box" > <p id="inicio-text">I tried so hard and got so far
             But in the end, it doesn't even matter
             </p> 
@@ -20,138 +20,157 @@
             <a href=""><img class="link-inicio" src="img/icones/facebook.png" alt=""></a> 
             <a href=""><img class="link-inicio" src="img/icones/instagram.png" alt=""></a>
         </div>-->
-        <!--Fim de Botões de Início-->
-    </div>
-    <!--Fim de Início-->
-    
-
-    <!--Sobre-->
-    <div id="sobre">
-        <div id="nossa-historia">
-            <img id="foto-sobre" src="img/Blobs/Foto Blob Estatisticas.png" alt="">
-            <h2>Nossa História</h2>
-            <br>
-            <!--<hr >-->
-            <br>
-            <p>      O projeto social Jovens Pela Diferença (JPD) é constituído por um grupo independente de mais de 150 voluntários, 30 membros auxiliares e uma coordenação geral, que realiza ações sociais todos os finais de semana, beneficiando 16 instituições e atuando em parceria com mais 5 projetos.
-                Por meio de ações de caridade, levamos o JPD à instituições que abrigam crianças e adolescentes em tratamento de câncer, lares de menores que sofreram assédio ou abuso sexual - que se encontram sob a guarda da justiça; asilos, no qual os membros do projeto oferecem brincadeiras, atividades lúdicas e de interação, lanches, doações, etc. O projeto também promove dois sopões por mês que beneficiam mais de cem pessoas em situação de rua, que acontecem na Praça do Ferreira, no centro de Fortaleza-CE.
-            </p>
-            <img id="Blob-sobre" src="img/Blobs/Blob1.png" alt="">
-
+            <!--Fim de Botões de Início-->
         </div>
+        <!--Fim de Início-->
 
-        <div id="dados-sobre">
-            <div class="dado-ong">
-                <div>
-                    <h1>5,2K</h1>
-                    Vidas Impactadas
+
+        <!--Sobre-->
+        <div id="sobre">
+            <div id="nossa-historia">
+                <img id="foto-sobre" src="img/Blobs/Foto Blob Estatisticas.png" alt="">
+                <h2>Nossa História</h2>
+                <br>
+                <!--<hr >-->
+                <br>
+                <p> O projeto social Jovens Pela Diferença (JPD) é constituído por um grupo independente de mais de 150
+                    voluntários, 30 membros auxiliares e uma coordenação geral, que realiza ações sociais todos os
+                    finais de semana, beneficiando 16 instituições e atuando em parceria com mais 5 projetos.
+                    Por meio de ações de caridade, levamos o JPD à instituições que abrigam crianças e adolescentes em
+                    tratamento de câncer, lares de menores que sofreram assédio ou abuso sexual - que se encontram sob a
+                    guarda da justiça; asilos, no qual os membros do projeto oferecem brincadeiras, atividades lúdicas e
+                    de interação, lanches, doações, etc. O projeto também promove dois sopões por mês que beneficiam
+                    mais de cem pessoas em situação de rua, que acontecem na Praça do Ferreira, no centro de
+                    Fortaleza-CE.
+                </p>
+                <img id="Blob-sobre" src="img/Blobs/Blob1.png" alt="">
+
+            </div>
+
+            <div id="dados-sobre">
+                <div class="dado-ong">
+                    <div>
+                        <h1>5,2K</h1>
+                        Vidas Impactadas
+                    </div>
+                </div>
+
+                <div class="dado-ong">
+                    <div>
+                        <h1>137</h1>
+                        Voluntários
+                    </div>
+                </div>
+
+                <div class="dado-ong">
+                    <div>
+                        <h1>87</h1>
+                        Instituições Beneficiadas
+                    </div>
                 </div>
             </div>
+        </div>
+        <!--Fim de Sobre-->
 
-            <div class="dado-ong">
-                <div>
-                    <h1>137</h1>
-                    Voluntários
+
+        <!--Mapa-->
+        <div id="mapa">
+            <h1>Veja a diferença que fazemos</h1>
+            <h5>Clique no região que você deseja para ver os benefícios gerados pela Ong</h5>
+            <div id="mapa-sec">
+                <div id=lateral-esquerda>
+                    <img id="mapa-img" width=600 src="img/mapa.png" alt="">
+                    <button type="button" class="bot-mapa" id="reg-1"
+                        onclick="getRegionalInfo('/regional', '1')">Regional 1</button>
+                    <button type="button" class="bot-mapa" id="reg-2"
+                        onclick="getRegionalInfo('/regional', '2')">Regional 2</button>
+                    <button type="button" class="bot-mapa" id="reg-3"
+                        onclick="getRegionalInfo('/regional', '3')">Regional 3</button>
+                    <button type="button" class="bot-mapa" id="reg-4"
+                        onclick="getRegionalInfo('/regional', '4')">Regional 4</button>
+                    <button type="button" class="bot-mapa" id="reg-5"
+                        onclick="getRegionalInfo('/regional', '5')">Regional 5</button>
+                    <button type="button" class="bot-mapa" id="reg-6"
+                        onclick="getRegionalInfo('/regional', '6')">Regional 6</button>
+                    <button type="button" class="bot-mapa" id="reg-7"
+                        onclick="getRegionalInfo('/regional', '7')">Regional 7</button>
+                    <button type="button" class="bot-mapa" id="reg-8"
+                        onclick="getRegionalInfo('/regional', '8')">Regional 8</button>
+                    <button type="button" class="bot-mapa" id="reg-9"
+                        onclick="getRegionalInfo('/regional', '9')">Regional 9</button>
+                    <button type="button" class="bot-mapa" id="reg-10"
+                        onclick="getRegionalInfo('/regional', '10')">Regional 10</button>
+                    <button type="button" class="bot-mapa" id="reg-11"
+                        onclick="getRegionalInfo('/regional', '11')">Regional 11</button>
+                    <button type="button" class="bot-mapa" id="reg-12"
+                        onclick="getRegionalInfo('/regional', '12')">Regional 12</button>
                 </div>
-            </div>
 
-            <div class="dado-ong">
-                <div>
-                    <h1>87</h1>
-                    Instituições Beneficiadas
+                <div id="lateral-direita">
+                    <div>
+                        <h3>Regional</h3>
+                        <img id="img-regional" src="img/fotos/foto-sobre.png" alt="Regional'">
+                        <h5>Nome da Instituição</h5><br>
+                        <h5>Endereço da Ação</h5><br>
+                        <h5>Número de Voluntários</h5><br>
+                        <h5>Número de Beneficiados</h5><br>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--Fim de Sobre-->
-
-
-    <!--Mapa-->
-    <div id="mapa">
-        <h1>Veja a diferença que fazemos</h1>
-        <h5>Clique no região que você deseja para ver os benefícios gerados pela Ong</h5>
-        <div id="mapa-sec">
-            <div id=lateral-esquerda>
-                <img id="mapa-img" width=600 src="img/mapa.png" alt="">
-                <button type="button" class="bot-mapa" id="reg-1" onclick="getRegionalInfo('/regional', '1')">Regional 1</button>
-                <button type="button" class="bot-mapa" id="reg-2" onclick="getRegionalInfo('/regional', '2')">Regional 2</button>
-                <button type="button" class="bot-mapa" id="reg-3" onclick="getRegionalInfo('/regional', '3')">Regional 3</button>
-                <button type="button" class="bot-mapa" id="reg-4" onclick="getRegionalInfo('/regional', '4')">Regional 4</button>
-                <button type="button" class="bot-mapa" id="reg-5" onclick="getRegionalInfo('/regional', '5')">Regional 5</button>
-                <button type="button" class="bot-mapa" id="reg-6" onclick="getRegionalInfo('/regional', '6')">Regional 6</button>
-                <button type="button" class="bot-mapa" id="reg-7" onclick="getRegionalInfo('/regional', '7')">Regional 7</button>
-                <button type="button" class="bot-mapa" id="reg-8" onclick="getRegionalInfo('/regional', '8')">Regional 8</button>
-                <button type="button" class="bot-mapa" id="reg-9" onclick="getRegionalInfo('/regional', '9')">Regional 9</button>
-                <button type="button" class="bot-mapa" id="reg-10" onclick="getRegionalInfo('/regional', '10')">Regional 10</button>
-                <button type="button" class="bot-mapa" id="reg-11" onclick="getRegionalInfo('/regional', '11')">Regional 11</button>
-                <button type="button" class="bot-mapa" id="reg-12" onclick="getRegionalInfo('/regional', '12')">Regional 12</button>
-            </div>
-
-            <div id="lateral-direita">
-                <div>
-                    <h3>Regional</h3>
-                    <img id="img-regional" src="img/fotos/foto-sobre.png" alt="Regional'">
-                    <h5>Nome da Instituição</h5><br>
-                    <h5>Endereço da Ação</h5><br>
-                    <h5>Número de Voluntários</h5><br>
-                    <h5>Número de Beneficiados</h5><br>
-                </div>    
-            </div>
+        <!--Fim de Mapa-->
+        <!--IMAGEM BACKGROUND-->
+        <div id="imagem-blob">
+            <img class="img-blob" src="img/Blobs/Blob Diretoria2.png" alt="figura organica">
         </div>
-    </div>
-    <!--Fim de Mapa-->
- <!--IMAGEM BACKGROUND-->
- <div id="imagem-blob">
-    <img class="img-blob" src="img/Blobs/Blob Diretoria2.png" alt="figura organica">
-  </div>
 
-  <!--Time-->
-  <div id="time-sec">
-      <div id="time-direcao">
-          <h2>Direção</h2>
-          <br><br>
-          <hr>
-          <br><br>
-          <div class="time" style="width: 1300px;">
-             <!-- <img style="transform: scaleX(-1); top:110px; left:-163px;" class="time-proximo" src="img/icones/proximo.png" alt="">-->
-              <span>
-                  <div>
-                      <img class="foto-dir" src="img/fotos/direcao-1.png" alt="">
-                      <div class="foto-dir-desc">
-                          <div>
-                              <strong>Ester Ribeiro</strong>
-                              <br> 
-                              Diretora 
-                          </div>
-                      </div>
-                  </div>
-              </span>
-              <span>
-                  <div>
-                      <img class="foto-dir" src="img/fotos/direcao-2.png" alt="">
-                      <div class="foto-dir-desc">
-                          <div>
-                              <strong>Amanda Carvalho</strong>
-                              <br> 
-                              RH 
-                          </div>
-                      </div>
-                  </div>
-              </span>
-              <span>
-                  <div>
-                      <img class="foto-dir" src="img/fotos/direcao-3.png" alt="">
-                      <div class="foto-dir-desc">
-                          <div>
-                              <strong>Betina Soares</strong>
-                              <br> 
-                              Gestora de Ações
-                          </div>
-                      </div>
-                  </div>
-              </span>
+        <!--Time-->
+        <div id="time-sec">
+            <div id="time-direcao">
+                <h2>Direção</h2>
+                <br><br>
+                <hr>
+                <br><br>
+                <div class="time" style="width: 1300px;">
+                    <!-- <img style="transform: scaleX(-1); top:110px; left:-163px;" class="time-proximo" src="img/icones/proximo.png" alt="">-->
+                    <span>
+                        <div>
+                            <img class="foto-dir" src="img/fotos/direcao-1.png" alt="">
+                            <div class="foto-dir-desc">
+                                <div>
+                                    <strong>Ester Ribeiro</strong>
+                                    <br>
+                                    Diretora
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span>
+                        <div>
+                            <img class="foto-dir" src="img/fotos/direcao-2.png" alt="">
+                            <div class="foto-dir-desc">
+                                <div>
+                                    <strong>Amanda Carvalho</strong>
+                                    <br>
+                                    RH
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <span>
+                        <div>
+                            <img class="foto-dir" src="img/fotos/direcao-3.png" alt="">
+                            <div class="foto-dir-desc">
+                                <div>
+                                    <strong>Betina Soares</strong>
+                                    <br>
+                                    Gestora de Ações
+                                </div>
+                            </div>
+                        </div>
+                    </span>
 
-              <!--<span>
+                    <!--<span>
                   <div>
                       <img class="foto-dir" src="img/fotos/direcao-1.png" alt="">
                       <div class="foto-dir-desc">
@@ -164,78 +183,95 @@
                   </div>
               </span>
               <img style="top:110px; right:-163px;" class="time-proximo" src="img/icones/proximo.png" alt="">-->
-             
-          </div>
-          
-      </div>
 
-      <div id="time-voluntarios">
-          <h3>Voluntários Fixos</h3>
-          <br><br>
-          <hr>
-          <br><br>
-          <div class="time" style="width: 1150px;">
-              <img  style="transform: scaleX(-1); top:32px; left:-238px;" class="time-proximo" src="img/icones/proximookok.png" alt="">
-              <span class="hover-wrap"><img class="foto-vol" src="img/fotos/direcao-4.png" alt=""><div class="vol-hover">Alexandra Martin</div></span>
-              <span class="hover-wrap"><img class="foto-vol" src="img/fotos/direcao-4.png" alt=""><div class="vol-hover">Jessica Ferreira</div></span>
-              <span class="hover-wrap"><img class="foto-vol" src="img/fotos/direcao-4.png" alt=""><div class="vol-hover">Diana Torres</div></span>
-              <span class="hover-wrap"><img class="foto-vol" src="img/fotos/direcao-4.png" alt=""><div class="vol-hover">Maria de Fátima</div></span>
-              <span class="hover-wrap"><img class="foto-vol" src="img/fotos/direcao-4.png" alt=""><div class="vol-hover">Perla Gomes</div></span>
-          </div>
-          
-      </div>
-      
+                </div>
 
-  </div>
-  <!--Fim de Time-->
+            </div>
+
+            <div id="time-voluntarios">
+                <h3>Voluntários Fixos</h3>
+                <br><br>
+                <hr>
+                <br><br>
+                <div class="time" style="width: 1150px;">
+                    <img style="transform: scaleX(-1); top:32px; left:-238px;" class="time-proximo"
+                        src="img/icones/proximookok.png" alt="">
+                    <span class="hover-wrap"><img class="foto-vol" src="img/fotos/direcao-4.png" alt="">
+                        <div class="vol-hover">Alexandra Martin</div>
+                    </span>
+                    <span class="hover-wrap"><img class="foto-vol" src="img/fotos/direcao-4.png" alt="">
+                        <div class="vol-hover">Jessica Ferreira</div>
+                    </span>
+                    <span class="hover-wrap"><img class="foto-vol" src="img/fotos/direcao-4.png" alt="">
+                        <div class="vol-hover">Diana Torres</div>
+                    </span>
+                    <span class="hover-wrap"><img class="foto-vol" src="img/fotos/direcao-4.png" alt="">
+                        <div class="vol-hover">Maria de Fátima</div>
+                    </span>
+                    <span class="hover-wrap"><img class="foto-vol" src="img/fotos/direcao-4.png" alt="">
+                        <div class="vol-hover">Perla Gomes</div>
+                    </span>
+                </div>
+
+            </div>
 
 
-    <!--Ajude-->
-    <div id="ajude-sec">
-        <h2>Ajude</h2>
-        <br>
-        <br>
-        <div id="planos">
-            <!--
+        </div>
+        <!--Fim de Time-->
+
+
+        <!--Ajude-->
+        <div id="ajude-sec">
+            <h2>Ajude</h2>
+            <br>
+            <br>
+            <div id="planos">
+                <!--
                 Professores, como o cliente não passou o link de um "me pague", pedi para uma amiga que tem conta
                 só que do sexshop
             -->
-            <div class="plano">
-                <h3>Bronze</h3>
-                <img src="img/Medalha Bronze.png" alt="">
-                <h5>R$ 100,00</h5>
-                <p>Destaque do Instagram</p>
-                <a href="https://mpago.la/23Td7d2"><h4>Doe</h4></a>
+                <div class="plano">
+                    <h3>Bronze</h3>
+                    <img src="img/Medalha Bronze.png" target="_blank" alt="imagem de uma medalha de cor bronze">
+                    <h5>R$ 100,00</h5>
+                    <p>Destaque do Instagram</p>
+                    <a href="https://mpago.la/23Td7d2" target="_blank">
+                        <h4>Doe</h4>
+                    </a>
+                </div>
+
+                <div class="plano">
+                    <h3>Prata</h3>
+                    <img src="img/Medalha Prata.png" alt="Imagem com medalha de cor prata">
+                    <h5>R$ 150,00</h5>
+                    <p> Vantagens dos planos anteriores <br><br>
+                        Agradecimento e divulgação nos eventos anuais </p>
+                    <a href="https://mpago.la/2fGTW4e" target="_blank">
+                        <h4>Doe</h4>
+                    </a>
+                </div>
+
+                <div class="plano">
+                    <h3>Ouro</h3>
+                    <img src="img/Medalha Ouro.png" alt="Imagem de uma medalha de cor dourada">
+                    <h5>R$ 200,00</h5>
+                    <p> Vantagens dos planos anteriores <br><br>
+                        Publicação quinzenal <br> <br>
+                        Logo da empresa nas roupas e site. <br> <br>
+                        Fotos e botons da ONG. <br><br>
+                        Ação conjunta. </p>
+                    <a href="https://mpago.la/1htPkce" target="_blank">
+                        <h4>Doe</h4>
+                    </a>
+                </div>
             </div>
 
-            <div class="plano">
-                <h3>Prata</h3>
-                <img src="img/Medalha Prata.png" alt="">
-                <h5>R$ 150,00</h5>
-                <p> Vantagens dos planos anteriores <br><br>
-                    Agradecimento e divulgação nos eventos anuais  </p>
-                    <a href="https://mpago.la/2fGTW4e"s><h4>Doe</h4></a>
-            </div>
-
-            <div class="plano">
-                <h3>Ouro</h3>
-                <img src="img/Medalha Ouro.png" alt="">
-                <h5>R$ 200,00</h5>
-                <p> Vantagens dos planos anteriores <br><br>
-                    Publicação quinzenal <br> <br>
-                    Logo da empresa nas roupas e site. <br> <br>
-                    Fotos e botons da ONG. <br><br>
-                    Ação conjunta.  </p>
-                    <a href="https://mpago.la/1htPkce"><h4>Doe</h4></a>
+            <div style="margin: 100px 50%;">
+                <a href="/confirma_doacao"><button id="envia-doacao">Confirme sua doação!</button></a>
             </div>
         </div>
+        <!--Fim de Ajude-->
 
-        <div style="margin: 100px 50%;">
-            <a href="/confirma_doacao"><button id="envia-doacao">Confirme sua doação!</button></a>
-        </div>
-    </div>
-    <!--Fim de Ajude-->
 
-    
 
-</main>
+    </main>
