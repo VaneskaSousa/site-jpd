@@ -35,11 +35,10 @@ Por enquanto, o modelo do banco de dados segue a estrutura abaixo:
 ## Arquivos do Projeto
 | Arquivo  	| Local  	 	
 |---	|---		
-| Modelo banco de dados  	| [site-jpd/database/](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD/database)  	
-| Sript banco de dados  	| [site-jpd/database/](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD/database)  	   	   	
-| HTML  	| [site-jpd/](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD) 	   	
-| CSS  	| [site-jpd/css](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD/css)
-| Javascript | [site-jpd/javascript](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD/js)
+| Modelo e script de banco de dados  	| [site-jpd/database/](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD/database)  	
+| HTML  	| [site-jpd/views](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD/views) 	   	
+| CSS  	| [site-jpd/assets/css](https://github.com/VaneskaSousa/site-jpd/tree/main/site_JPD/assets/css)
+| Javascript | [site-jpd/assets/js/script.js](https://github.com/VaneskaSousa/site-jpd/blob/main/site_JPD/assets/js/script.js)
 
 ### Requisitos e progressos
 
