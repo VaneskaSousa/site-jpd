@@ -52,7 +52,7 @@ Por enquanto, o modelo do banco de dados segue a estrutura abaixo:
 |RI_5: Interação e correlação entre valor doado e ações realizadas. Como patrocinadora quero conferir, com apelo emocional e interação, o impacto social causado pela ONG e pelo valor doado a ela a ONG | :heavy_check_mark: (com alterações que a ONG propos)
 |RI_6: Cadastro de patrocínio. Como patrocinador posso entrar me cadastrar dentro do tipo de patrocínio em que me encaixo mas de forma interactiva que fuja de formulário, e-mails ou terceiros. | :heavy_check_mark:
 |RI_7: Resultado do patrocínio. Como patrocinador, após me inscrever para realizar a doação, quero receber resposta direta e dentro do ambiente web em que estou. | ⚠️(isso só nao foi implementando no front, mas o servidor está pronto para receber (o database)
-|RI_8: Resultado do cadastro de dados. Como voluntário organizador quero saber se os dados que cadastrei estão no formato correto | :x:
+|RI_8: Resultado do cadastro de dados. Como voluntário organizador quero saber se os dados que cadastrei estão no formato correto | :heavy_check_mark: (validação do formato dos dados)
 |RI_9: Resultado do upload de dados. Como voluntário organizador quero saber se os dados que cadastrei foram devidamente atualizados. | :heavy_check_mark:
 |RI_10: Formulário de contato. Como patrocinador ou interessado na ONG, quero conseguir entrar em contato, via site, com a organização. | :heavy_check_mark: (possivel fazer isso ao enviar o comprovante)
 
